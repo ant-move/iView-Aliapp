@@ -3,11 +3,13 @@
 
 ### 一套高质量的支付宝小程序 UI 组件库
 
-> 使用 [Antmove](https://ant-move.github.io/website/) 小程序转换器基于 [ivew-weapp](https://github.com/TalkingData/iview-weapp) 转换得到。
+> 使用 [Antmove](https://ant-move.github.io/website/) 小程序转换器基于 [iview-weapp](https://github.com/TalkingData/iview-weapp) 转换得到。
 
 ## 文档
 
-[微信版官方文档](https://weapp.iviewui.com)
+* [iView Aliapp 文档](https://ant-move.github.io/iview-alipay-docs/)
+* [iView weap 文档](https://weapp.iviewui.com)
+
 
 > 大部分组件都保留了原有的用法，只有一两个做了少许的改动。支付宝版本文档近期推出。
 

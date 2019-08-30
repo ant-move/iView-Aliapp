@@ -1,7 +1,6 @@
 <view class='page-container-classname'>
                 <view class='logo'>
-  <image src='../images/logo.png' mode='aspectFit'>
-  </image>
+  <i-panel title='iView Aliapp'></i-panel>
 </view><i-panel title='布局'>
   <i-cell-group>
     <i-cell title='Layout 栅格布局' is-link=" " url='/pages/layout/index'>

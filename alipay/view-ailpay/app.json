@@ -43,8 +43,7 @@
 		"navigationBarTextStyle": "black",
 		"backgroundTextStyle": "dark",
 		"backgroundColor": "#f9f9f9",
-		"titleBarColor": "#FAFAFA",
-		"defaultTitle": "iView WeApp"
+		"defaultTitle": "iView Aliapp"
 	},
 	"debug": true,
 	"sitemapLocation": "sitemap.json"
