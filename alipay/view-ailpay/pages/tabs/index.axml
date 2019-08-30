@@ -1,0 +1,47 @@
+<view class='page-container-classname'>
+                <i-panel title='基本用法'>
+</i-panel><i-tabs current='{{ current }}' onChange='handleChange'>
+  <i-tab type='tab1' title='选项1'>
+  </i-tab>
+  <i-tab type='tab2' title='选项2'>
+  </i-tab>
+  <i-tab type='tab3' title='选项3'>
+  </i-tab>
+</i-tabs><i-panel title='自定义主题色'>
+</i-panel><i-tabs current='{{ current }}' color='#f759ab' onChange='handleChange'>
+  <i-tab type='tab1' title='选项1'>
+  </i-tab>
+  <i-tab type='tab2' title='选项2'>
+  </i-tab>
+  <i-tab type='tab3' title='选项3'>
+  </i-tab>
+</i-tabs><i-panel title='徽标'>
+</i-panel><i-tabs current='{{ current }}' onChange='handleChange'>
+  <i-tab type='tab1' title='选项1' count='{{3}}'>
+  </i-tab>
+  <i-tab type='tab2' title='选项2'>
+  </i-tab>
+  <i-tab type='tab3' title='选项3' dot=" ">
+  </i-tab>
+</i-tabs><i-panel title='滚动'>
+</i-panel><i-tabs current='{{ current_scroll }}' scroll=" " onChange='handleChangeScroll'>
+  <i-tab is-inline='{{true}}' type='tab1' title='选项1'>
+  </i-tab>
+  <i-tab is-inline='{{true}}' type='tab2' title='选项2'>
+  </i-tab>
+  <i-tab is-inline='{{true}}' type='tab3' title='选项3'>
+  </i-tab>
+  <i-tab is-inline='{{true}}' type='tab4' title='选项4'>
+  </i-tab>
+  <i-tab is-inline='{{true}}' type='tab5' title='选项5'>
+  </i-tab>
+  <i-tab is-inline='{{true}}' type='tab6' title='选项6'>
+  </i-tab>
+  <i-tab is-inline='{{true}}' type='tab7' title='选项7'>
+  </i-tab>
+  <i-tab is-inline='{{true}}' type='tab8' title='选项8'>
+  </i-tab>
+  <i-tab is-inline='{{true}}' type='tab9' title='选项9'>
+  </i-tab>
+</i-tabs>
+            </view>

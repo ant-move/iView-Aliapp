@@ -1,0 +1,91 @@
+<view class='page-container-classname'>
+                <i-grid>
+  <i-row>
+    <i-grid-item>
+      <i-grid-icon>
+        <i-icon size='{{24}}' type='activity'>
+        </i-icon>
+        <i-grid-label>
+          宫格
+        </i-grid-label>
+      </i-grid-icon>
+    </i-grid-item>
+    <i-grid-item>
+      <i-grid-icon>
+        <i-icon size='{{24}}' type='addressbook'>
+        </i-icon>
+        <i-grid-label>
+          宫格
+        </i-grid-label>
+      </i-grid-icon>
+    </i-grid-item>
+    <i-grid-item>
+      <i-grid-icon>
+        <i-icon size='{{24}}' type='barrage'>
+        </i-icon>
+        <i-grid-label>
+          宫格
+        </i-grid-label>
+      </i-grid-icon>
+    </i-grid-item>
+  </i-row>
+  <i-row>
+    <i-grid-item>
+      <i-grid-icon>
+        <i-icon size='{{24}}' type='collection'>
+        </i-icon>
+        <i-grid-label>
+          宫格
+        </i-grid-label>
+      </i-grid-icon>
+    </i-grid-item>
+    <i-grid-item>
+      <i-grid-icon>
+        <i-icon size='{{24}}' type='computer'>
+        </i-icon>
+        <i-grid-label>
+          宫格
+        </i-grid-label>
+      </i-grid-icon>
+    </i-grid-item>
+    <i-grid-item>
+      <i-grid-icon>
+        <i-icon size='{{24}}' type='coupons'>
+        </i-icon>
+        <i-grid-label>
+          宫格
+        </i-grid-label>
+      </i-grid-icon>
+    </i-grid-item>
+  </i-row>
+  <i-row>
+    <i-grid-item>
+      <i-grid-icon>
+        <i-icon size='{{24}}' type='flag'>
+        </i-icon>
+        <i-grid-label>
+          宫格
+        </i-grid-label>
+      </i-grid-icon>
+    </i-grid-item>
+    <i-grid-item>
+      <i-grid-icon>
+        <i-icon size='{{24}}' type='interactive'>
+        </i-icon>
+        <i-grid-label>
+          宫格
+        </i-grid-label>
+      </i-grid-icon>
+    </i-grid-item>
+    <i-grid-item>
+      <i-grid-icon>
+        <i-icon size='{{24}}' type='mail'>
+        </i-icon>
+        <i-grid-label>
+          宫格
+        </i-grid-label>
+      </i-grid-icon>
+    </i-grid-item>
+  </i-row>
+</i-grid>
+            </view>

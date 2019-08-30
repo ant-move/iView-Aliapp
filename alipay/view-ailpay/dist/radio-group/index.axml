@@ -1,0 +1,6 @@
+<view class='radio-group-index'>
+  <i-cell-group class='{{iClass}}'>
+    <i-radio a:for='{{dataSources}}' checked='{{item.checked}}' position='{{position}}' a:key='*this' value='{{item.name}}' onChange='handleChange'>
+    </i-radio>
+  </i-cell-group>
+</view>

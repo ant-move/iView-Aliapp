@@ -1,0 +1,6 @@
+<view class='sticky-index'>
+  <view class='i-sticky {{iClass}}'>
+    <slot>
+    </slot>
+  </view>
+</view>

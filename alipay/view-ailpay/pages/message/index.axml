@@ -1,0 +1,20 @@
+<view class='page-container-classname'>
+                <view style='margin-top: 100px'>
+  <i-button type='ghost' onClick='handleDefault'>
+    默认提醒
+  </i-button>
+  <i-button type='ghost' onClick='handleSuccess'>
+    成功提醒
+  </i-button>
+  <i-button type='ghost' onClick='handleWarning'>
+    警告提醒
+  </i-button>
+  <i-button type='ghost' onClick='handleError'>
+    错误提醒
+  </i-button>
+  <i-button type='ghost' onClick='handleDuration'>
+    自定义持续时间
+  </i-button>
+</view><i-message id='message'>
+</i-message>
+            </view>

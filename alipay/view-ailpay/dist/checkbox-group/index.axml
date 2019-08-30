@@ -1,0 +1,6 @@
+<view class='checkbox-group-index'>
+  <i-cell-group class='{{iClass}}'>
+    <slot>
+    </slot>
+  </i-cell-group>
+</view>

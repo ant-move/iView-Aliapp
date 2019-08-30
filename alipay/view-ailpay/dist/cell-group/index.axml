@@ -1,0 +1,6 @@
+<view class='cell-group-index'>
+  <view class='{{iClass}} i-cell-group'>
+    <slot>
+    </slot>
+  </view>
+</view>

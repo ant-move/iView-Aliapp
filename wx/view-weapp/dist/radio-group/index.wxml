@@ -1,0 +1,4 @@
+<i-cell-group class="i-class">
+    <i-radio wx:for="{{dataSources}}" checked='{{item.checked}}' position="{{position}}" wx:key="{{item.id}}" value="{{item.name}}" bind:change='handleChange'>
+        </i-radio>
+</i-cell-group>

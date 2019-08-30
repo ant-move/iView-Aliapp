@@ -1,0 +1,6 @@
+<view class='row-index'>
+  <view class='{{iClass}} i-row'>
+    <slot>
+    </slot>
+  </view>
+</view>

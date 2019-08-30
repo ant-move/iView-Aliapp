@@ -1,0 +1,6 @@
+<view class='grid-index'>
+  <view class='{{iClass}} i-grid'>
+    <slot>
+    </slot>
+  </view>
+</view>
