@@ -33,7 +33,7 @@
 
 ### 预览
 
-<img width='150px' src='https://ant-move.github.io/iview-alipay-docs/dist/526910cfa6fa3cc84be09783e4fb102b.gif' /><img width='150px' src='https://ant-move.github.io/iview-alipay-docs/dist/d9b709109f7d0eb5ed600de339e757ae.gif' /><img width='150px' src='https://ant-move.github.io/iview-alipay-docs/dist/b684ddb29bb562854bb25990fcea34be.gif' />
+<img width='150px' src='https://ant-move.github.io/iview-alipay-docs/dist/d9b709109f7d0eb5ed600de339e757ae.gif' /><img width='150px' src='https://ant-move.github.io/iview-alipay-docs/dist/b684ddb29bb562854bb25990fcea34be.gif' />
 
 ### IDE 预览
 
