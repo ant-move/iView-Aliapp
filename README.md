@@ -32,6 +32,13 @@
 ```
 
 ### 预览
+
+<img width='150px' src='https://ant-move.github.io/iview-alipay-docs/dist/526910cfa6fa3cc84be09783e4fb102b.gif' />
+<img width='150px' src='https://ant-move.github.io/iview-alipay-docs/dist/d9b709109f7d0eb5ed600de339e757ae.gif' />
+<img width='150px' src='https://ant-move.github.io/iview-alipay-docs/dist/b684ddb29bb562854bb25990fcea34be.gif' />
+
+### IDE 预览
+
 下载本项目到本地，使用支付宝 IDE 打开 iview-alipay 即可预览。
 
 > 预览时请在项目详情设置中开启 `component2` 编译，详情可参考[支付宝小程序自定义组件使用介绍](https://docs.alipay.com/mini/framework/custom-component-overview#%E4%BD%BF%E7%94%A8%E9%A1%BB%E7%9F%A5)。

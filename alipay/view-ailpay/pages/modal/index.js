@@ -14,7 +14,7 @@ _Page({
                 color: "#2d8cf0"
             },
             {
-                name: "微信支付",
+                name: "支付宝支付",
                 color: "#19be6b"
             },
             {

@@ -1,7 +1,6 @@
 const utils = require('../../api/utils');
 const { warnLife } = utils;
 const config = require('../../api/config');
-config.env = 'development';
 const createNode = require('./relation');
 
 const getUrl = function () {
