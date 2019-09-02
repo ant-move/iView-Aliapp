@@ -1,5 +1,7 @@
 <i-panel title="group-水果">
-    <i-radio-group current="{{current}}" position='{{position}}' items='{{fruit}}' bindchange="handleFruitChange">    
+    <i-radio-group current="{{current}}" bindchange="handleFruitChange">
+        <i-radio wx:for="{{fruit}}" position="{{position}}" wx:key="{{item.id}}" value="{{item.name}}">
+        </i-radio>
     </i-radio-group>
 </i-panel>
 

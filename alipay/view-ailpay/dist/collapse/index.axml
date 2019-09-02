@@ -1,6 +1,0 @@
-<view class='collapse-index'>
-  <view class='{{iClass}} i-collapse' onCollapse='clickfn'>
-    <slot>
-    </slot>
-  </view>
-</view>

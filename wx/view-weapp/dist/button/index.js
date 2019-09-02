@@ -76,8 +76,5 @@ Component({
         binderror({ detail = {} } = {}) {
             this.triggerEvent('error', detail);
         }
-    },
-    created () {
-      console.log(this)
     }
 });

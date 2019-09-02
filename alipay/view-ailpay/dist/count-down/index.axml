@@ -1,5 +1,0 @@
-<view class='count-down-index'>
-  <text class='{{countdownClass}}'>
-    {{time}}
-  </text>
-</view>

@@ -13,10 +13,7 @@ Page({
             id: 4,
             name: '葡萄',
         }],
-        current: {
-            value: '苹果',
-            checked: false
-        },
+        current: '苹果',
         position: 'left',
         animal: '熊猫',
         checked: false,
@@ -24,8 +21,8 @@ Page({
     },
     handleFruitChange({ detail = {} }) {
         this.setData({
-            current: detail
-        })
+            current: detail.value
+        });
     },
     handleClick() {
         this.setData({
@@ -41,5 +38,6 @@ Page({
         this.setData({
             checked: detail.current
         });
-    }
+    },
+
 });

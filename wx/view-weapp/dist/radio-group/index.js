@@ -1,52 +1,38 @@
 Component({
     externalClasses: ['i-class'],
+    relations: {
+        '../radio/index': {
+            type: 'child',
+            linked() {
+                this.changeCurrent();
+            },
+            linkChanged() {
+                this.changeCurrent();
+            },
+            unlinked() {
+                this.changeCurrent();
+            }
+        }
+    },
     properties: {
         current: {
-            type: Object,
-            value: {},
+            type: String,
+            value: '',
             observer: 'changeCurrent'
         },
-        position: {
-            type: String,
-            value: 'left'
-        },
-        items: {
-            type: Array,
-            value: [],
-            observer: 'updateSources'
-        }
-    },
-    data: {
-        dataSources: []
     },
     methods: {
-        changeCurrent() {
-            this.updateSources(this.data.items)
-        },
-        updateSources (arr) {
-            if (!Array.isArray(arr)) return false;
-            arr = arr.map((a) => {
-                if (a.name === this.data.current.value) {
-                    a.checked = this.data.current.checked;
-                } else {
-                    a.checked = false
-                }
-                return a;
-            })
-            this.setData({
-                dataSources: arr
-            })
-        },
-        handleChange (e) {
-            let _d = {
-                value: e.detail.value,
-                checked: e.detail.current
+        changeCurrent(val = this.data.current) {
+            let items = this.getRelationNodes('../radio/index');
+            const len = items.length;
+            if (len > 0) {
+                items.forEach(item => {
+                    item.changeCurrent(val === item.data.value);
+                });
             }
-            this.triggerEvent('change', _d);
+        },
+        emitEvent(current) {
+            this.triggerEvent('change', current);
         }
-    }
-    ,
-    ready () {
-       this.updateSources(this.data.items);
     }
 });

@@ -1,7 +1,7 @@
 <view class="i-index i-class">
     <scroll-view 
         scroll-y 
-        style="{{parse1.setScrollStyle(height)}}" 
+        style="{{parse.setScrollStyle(height)}}" 
         bindscroll="handlerScroll"
         scroll-top="{{scrollTop}}">
         <slot></slot>  
@@ -20,7 +20,7 @@
         <view class="i-index-tooltip" style="{{ isTouches ? 'display:block' : 'display:none' }}">{{currentName}}</view>
     </scroll-view>
 </view>
-<wxs module="parse1">
+<wxs module="parse">
     module.exports = {
        setScrollStyle : function(height){
            var units = ['%','px','rem','rpx','em','rem'];

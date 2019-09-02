@@ -40,7 +40,7 @@
     "pages/load-more/index"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#FAFAFA",
+    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "iView WeApp",
     "navigationBarTextStyle": "black",
     "backgroundTextStyle": "dark",

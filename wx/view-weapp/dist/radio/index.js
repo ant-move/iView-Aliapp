@@ -28,15 +28,6 @@ Component({
             type: String,
             value: 'left', //left right
             observer: 'setPosition'
-        },
-        current: {
-            type: Number,
-            value: 0,
-            observer: 'changeCurrent'
-        },
-        index: {
-            type: Number,
-            value: 0
         }
     },
     data: {
@@ -48,12 +39,13 @@ Component({
     },
     methods: {
         changeCurrent(current) {
-            this.setData({ checked: current === this.data.index});
+            this.setData({ checked: current });
         },
         radioChange() {
             if (this.data.disabled) return;
             const item = { current: !this.data.checked, value: this.data.value };
-            this.triggerEvent('change', item);
+            const parent = this.getRelationNodes('../radio-group/index')[0];
+            parent ? parent.emitEvent(item) : this.triggerEvent('change', item);
         },
         setPosition() {
             this.setData({

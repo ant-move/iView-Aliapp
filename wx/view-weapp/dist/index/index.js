@@ -35,12 +35,9 @@ Component({
         isTouches : false
     },
     methods : {
-        loop(){},   
+        loop(){},
         _updateDataChange( ){
-            let indexItems = [];
-            
-            indexItems = this.getRelationNodes('../index-item/index') || this.selectAllComponents('.i-index-item');
-          this.dataStore = indexItems;
+            const indexItems = this.getRelationNodes('../index-item/index');
             const len = indexItems.length;
             const fixedData = this.data.fixedData;
             /*
@@ -80,8 +77,7 @@ Component({
         handlerScroll(event){
             const detail = event.detail;
             const scrollTop = detail.scrollTop;
-          const indexItems = this.getRelationNodes("../index-item/index") || this.dataStore;
-
+            const indexItems = this.getRelationNodes('../index-item/index');
             indexItems.forEach((item,index)=>{
                 let data = item.data;
                 let offset = data.top + data.height;
@@ -94,8 +90,7 @@ Component({
             })
         },
         getCurrentItem(index){
-          const indexItems = this.getRelationNodes("../index-item/index") || this.dataStore;
-
+            const indexItems = this.getRelationNodes('../index-item/index');
             let result = {};
             result = indexItems[index].data;
             result.total = indexItems.length;
@@ -112,7 +107,6 @@ Component({
                 currentName : item.currentName,
                 isTouches : true
             })
-            console.log(item, this.data)
             this.triggerCallback({
                 index : eindex,
                 current : item.currentName
@@ -160,8 +154,5 @@ Component({
                 })
             }).exec()
         }
-    },
-    onPageReady () {
-      this._updateDataChange()
     }
 })

@@ -2,6 +2,6 @@
     "component": true,
     "usingComponents":
     {
-        "i-radio": "../radio/index"
+        "i-cell-group": "../cell-group/index"
     }
 }

@@ -1,4 +1,5 @@
 <button
+    unscope-style
     class="i-class i-btn {{ long ? 'i-btn-long' : '' }} {{ 'i-btn-' + size }} {{ 'i-btn-' + type }} {{ 'i-btn-' + shape }} {{ loading ? 'i-btn-loading' : '' }} {{ disabled ? 'i-btn-disabled' : ''}} {{ inline ? 'i-btn-inline' : '' }}"
     hover-class="i-btn-hover"
     bindtap="handleTap"

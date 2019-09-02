@@ -1,6 +1,0 @@
-<view class='grid-icon-index'>
-  <view class='{{iClass}} i-grid-icon'>
-    <slot>
-    </slot>
-  </view>
-</view>

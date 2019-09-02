@@ -1,6 +1,0 @@
-<view class='steps-index'>
-  <view class='{{iClass}} i-steps'>
-    <slot>
-    </slot>
-  </view>
-</view>
