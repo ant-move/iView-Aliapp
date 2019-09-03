@@ -22,7 +22,7 @@ _Component({
     },
     methods: {
         updateDataChange() {
-            const className = ".i-index-item";
+            const className = ".i-index-item-" + this.data.name;
 
             const query = _my.createSelectorQuery().in(this);
 

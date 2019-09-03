@@ -20,21 +20,36 @@ const getUrl = function () {
     });
     return url;
 };
+const getLogInfo = function () {
+    let num = 0;
+    let info = my.getStorageSync({
+      key: '__antmove_loginfo'
+    }).data.pages;
+    info.forEach(function (v,i) {
+      num += v.logs.length
+    })
+    return num
+};
+
 const watchShakes = function () {
     let pages = getCurrentPages();
     let url = pages[pages.length - 1].route;
     let logUrl = "pages/ant-move-runtime-logs/index"; 
     let specificUrl = "pages/ant-move-runtime-logs/specific/index";
-    if ( url ===logUrl || url===specificUrl ) {
-        watchShakes();
-    }  
     my.watchShake({
-        success: function () {
-            watchShakes();
+        success: function () { 
+            let num = getLogInfo();  
+            let ifWatch = my.getStorageSync({
+                key:'ifWatch'
+            }).data;
+            if (!ifWatch || url === logUrl || url === specificUrl || !num) {
+                watchShakes();
+                return false
+            }
             my.confirm({
                 title: '温馨提示',
-                content: '是否进入警告日志页面',
-                confirmButtonText: '马上进入',
+                content: `已收集了${num}条问题日志，是否查看?  (该弹窗和问题收集页面的代码由Antmove嵌入，上线时请记得去掉)`,
+                confirmButtonText: '赶紧看看',
                 cancelButtonText: '暂不需要',
                 success: function (res) {
                     if (res.confirm) {
@@ -42,6 +57,9 @@ const watchShakes = function () {
                             url: '/pages/ant-move-runtime-logs/index'
                         });
                     }
+                },
+                complete: function () {
+                    watchShakes();
                 }
             });
         }
@@ -58,7 +76,7 @@ module.exports = {
             if (typeof options.data === 'function') {
                 options.data = options.data();
             }
-            
+
             getUrl();
             if (config.env === "development") {
                 watchShakes();

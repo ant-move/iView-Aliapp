@@ -1,5 +1,5 @@
 <view class='sticky-item-index {{className}}' ref='saveChildRef0'>
-  <view class='i-sticky-item'>
+  <view class='i-sticky-item i-sticky-item-{{index}}'>
     <view class="i-sticky-item-header {{iClass}} {{ isFixed === true ? 'i-sticky-fixed' : '' }}">
       <view class='i-sticky-title'>
         <slot name='title'>

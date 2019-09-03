@@ -1,9 +1,11 @@
 const _Page = require("/__antmove/component/componentClass.js")("Page");
+const _my = require("/__antmove/api/index.js")(my);
 import { cities } from "./city";
 
 _Page({
     data: {
-        cities: []
+        cities: [],
+        scrollViewHeight: "100%"
     },
 
     onChange(event) {
@@ -11,6 +13,11 @@ _Page({
     },
 
     onReady() {
+        let info = _my.getSystemInfoSync();
+
+        this.setData({
+            scrollViewHeight: String(info.screenHeight) + "px"
+        });
         let storeCity = new Array(26);
         const words = [
             "A",

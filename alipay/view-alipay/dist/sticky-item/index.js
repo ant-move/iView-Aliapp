@@ -30,12 +30,16 @@ _Component({
         },
 
         updateDataChange(index) {
+            this.setData({
+                index
+            });
             const className = ".i-sticky-item";
+            const selector = className + "-" + index;
 
             const query = _my.createSelectorQuery().in(this);
 
             query
-                .select(className)
+                .select(selector)
                 .boundingClientRect(res => {
                     if (res) {
                         this.setData({

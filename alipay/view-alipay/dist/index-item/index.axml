@@ -1,7 +1,7 @@
 <view class='index-item-index {{className}}' ref='saveChildRef0'>
   <import-sjs from="./index.axmlparse.sjs" name='parse'>
   </import-sjs>
-  <view class='i-index-item {{iClass}}'>
+  <view class='i-index-item {{iClass}} i-index-item-{{name}}'>
     <view class='i-index-item-header'>
       {{name}}
     </view>

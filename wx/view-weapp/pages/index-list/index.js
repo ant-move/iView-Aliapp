@@ -1,12 +1,17 @@
 import { cities } from './city';
 Page({
     data : {
-        cities : []
+        cities : [],
+        scrollViewHeight: '100%'
     },
     onChange(event){
         console.log(event.detail,'click right menu callback data')
     },
     onReady(){
+      let info = wx.getSystemInfoSync();
+      this.setData({
+        scrollViewHeight: String(info.screenHeight) + 'px'
+      })
         let storeCity = new Array(26);
         const words = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
         words.forEach((item,index)=>{

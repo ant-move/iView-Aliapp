@@ -24,17 +24,22 @@ Component({
             })
         },
         updateDataChange(index) {
-            const className = '.i-sticky-item';
-            const query = wx.createSelectorQuery().in(this);
-            query.select( className ).boundingClientRect((res)=>{
-                    if( res ){
-                        this.setData({
-                            top : res.top,
-                            height : res.height,
-                            index : index
-                        })
-                    }
-            }).exec()
+          this.setData({ index })
+          const className = ".i-sticky-item";
+
+          const selector = className + "-" + index;
+            
+              const query = wx.createSelectorQuery().in(this);
+              query.select(selector).boundingClientRect((res) => {
+                if (res) {
+                  this.setData({
+                    top: res.top,
+                    height: res.height,
+                    index: index
+                  })
+                }
+              }).exec()
+            
         }
     }
 })

@@ -22,5 +22,14 @@ module.exports = {
         if (parent) {
             node.setParent(parent);
         }
-    }
+    },
+    setIfWatch
+
 };
+function setIfWatch (res) {
+    my.setStorageSync({
+        key: 'ifWatch',
+        data: res
+    });
+}
+

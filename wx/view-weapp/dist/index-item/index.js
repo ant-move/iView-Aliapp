@@ -18,7 +18,8 @@ Component({
     },
     methods: {
         updateDataChange() {
-            const className = '.i-index-item';
+          const className = ".i-index-item-" + this.data.name;
+
             const query = wx.createSelectorQuery().in(this);
             query.select( className ).boundingClientRect((res)=>{
                     this.setData({

@@ -141,6 +141,7 @@ Component({
             })
         },
         handlerTouchEnd(){
+          console.log(this)
             this.setData({
                 isTouches : false
             })

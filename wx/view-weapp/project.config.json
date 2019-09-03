@@ -34,7 +34,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -54,6 +54,13 @@
 					"id": -1,
 					"name": "page-radio",
 					"pathName": "pages/radio/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index-list/index",
+					"pathName": "pages/index-list/index",
 					"query": "",
 					"scene": null
 				},
