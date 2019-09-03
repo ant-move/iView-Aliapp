@@ -33,6 +33,10 @@
 
 ### 预览
 
+* 支付宝扫 - <img width='150' src='http://cache.amap.com/ecology/tool/antmove/web/assets/iView-Aliapp.jpg'/>
+
+* gif 效果图
+
 <img width='150px' src='https://ant-move.github.io/iview-alipay-docs/dist/d9b709109f7d0eb5ed600de339e757ae.gif' /><img width='150px' src='https://ant-move.github.io/iview-alipay-docs/dist/b684ddb29bb562854bb25990fcea34be.gif' />
 
 ### IDE 预览
