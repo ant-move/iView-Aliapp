@@ -46,6 +46,14 @@
 下载本项目到本地，使用支付宝 IDE 打开 iview-alipay 即可预览。
 
 > 预览时请在项目详情设置中开启 `component2` 编译，详情可参考[支付宝小程序自定义组件使用介绍](https://docs.alipay.com/mini/framework/custom-component-overview#%E4%BD%BF%E7%94%A8%E9%A1%BB%E7%9F%A5)。
+
+# 联系
+
+如果您在使用的过程中碰到问题，可以通过下面几个途径寻求帮助。
+
+* 钉钉微信交流群： <img width='200px' src='https://ant-move.github.io/website/img/contact-dingding.jpg'/> <img width='200px' src='https://cache.amap.com/ecology/tool/antmove/web/assets/02.JPG'/>
+* 邮件：amap-appx@service.autonavi.com
+
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
