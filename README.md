@@ -33,7 +33,9 @@
 
 ### 预览
 
-* 支付宝扫 - <img width='150' src='http://cache.amap.com/ecology/tool/antmove/web/assets/iView-Aliapp.jpg'/>
+* 支付宝小程序
+
+<img width='150px' src='https://cache.amap.com/ecology/tool/antmove/web/assets/iView-Aliapp.jpg'/>
 
 * gif 效果图
 
