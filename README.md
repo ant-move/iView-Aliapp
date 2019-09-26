@@ -1,7 +1,7 @@
 
 # iView alipay
 
-### 一套高质量的支付宝小程序 UI 组件库
+### 一套高质量的支付宝小程序 UI 组件库，支持钉钉小程序。
 
 > 使用 [Antmove](https://ant-move.github.io/website/) 小程序转换器基于 [iview-weapp](https://github.com/TalkingData/iview-weapp) 转换得到。
 
