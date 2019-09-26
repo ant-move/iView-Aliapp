@@ -1,145 +1,163 @@
 let id = 0;
-const { connectNodes } = require('./utils');
+const { connectNodes } = require("./utils");
+let astCache = {};
 
-let RelationAst = {
-    $refNodes: {},
-    $nodes: {},
-    $page: null,
-    current: null,
-    createArray: [],
-    destoryArray: [],
-    mountedHandles: [],
-    componentNodes: {},
-    $refNodes: {}
-};
-
-function createNode (ctx) {
-    this.$self = ctx;
-    ctx.$node = this;
-    this.$id = id++;
-    this.$children = [];
-}
-
-createNode.prototype = {
-    getRootNode () {
-        return RelationAst;
-    },
-    setParent (parent) {
-        this.$parent = parent;
-        parent.appendChild(this);
-    },
-    appendChildren () {
-        this.$children
-            .forEach((child) => {
-                this.appendChild(child);
-            });
-    },
-    destory () {
-        let index = this.$relationNode.$index;
-        this.$parent.$children.splice(index, 1);
-    },
-    appendChild (child) {
-        this.$children.push(child);
-        child.$parent = this;
-    },
-    removeChld (child) {
-        this.$children = this.$children
-            .filter(function (el) {
-                return el.$id !== child.$id;
-            });
-    },
-    _addComponentNode (className, ctx) {
-        className = '.' + className;
-        let componentNodes = this.getRootNode().componentNodes;
-        if (componentNodes[className]) {
-            componentNodes[className].push(ctx);
-        } else {
-            componentNodes[className] = [ctx];
-        }
-    },
-    addComponentNodeId (id, ctx) {
-        id = '#' + id;
-        let componentNodes = this.getRootNode().componentNodes;
-        if (componentNodes[id]) {
-            componentNodes[id].push(ctx);
-        } else {
-            componentNodes[id] = [ctx];
-        }
-    },
-    addComponentNode (className = '', ctx) {
-        let classNameArray = className.split(/\s+/g);
-        classNameArray.forEach((classNameStr) => {
-            this._addComponentNode(classNameStr, ctx);
-        });
-    },
-    selectComponent (className) {
-        let componentNodes = this.getRootNode().componentNodes;
-        return componentNodes[className] && componentNodes[className][0];
-    },
-    selectComponents (className) {
-        let componentNodes = this.getRootNode().componentNodes;
-        return componentNodes[className];
-    }
-};
-
-function initRootNode () {
-    /**
-   * 页面节点信息初始化
-   */
-    RelationAst = {
+function createAstData () {
+    let RelationAst = {
+        $refNodes: {},
         $nodes: {},
         $page: null,
         current: null,
         createArray: [],
         destoryArray: [],
         mountedHandles: [],
-        componentNodes: {},
-        $refNodes: {}
+        componentNodes: {}
     };
+
     return RelationAst;
 }
-
-function getRootNode () {
-    return RelationAst;
+function createNode (ctx, isRoot = false) {
+    this.$id = id++;
+    this.$children = [];
+    this.setCtx(ctx, isRoot);
 }
-module.exports = function (node, cb = () => {}, relationNode, bool =false, _bool = false) {
-    if (_bool) {
-        return getRootNode();
-    }
-    if (bool) {
-        return initRootNode();
-    }
-    let wrapNode = new createNode(node);
-    let route = relationNode.$route;
 
-    RelationAst.$page = wrapNode;
+createNode.prototype = {
+    setCtx (ctx, isRoot = false) {
+        this.$self = ctx;
+
+        if (isRoot) {
+            ctx.$rootNode = this;
+        } else {
+            ctx.$node = this;
+        }
+    },
+    getRootNode () {
+        let ctx = this.$self;
+        let cacheId = ctx.$page
+            ? ctx.$page.$id || ctx.$page.$viewId
+            : ctx.$viewId || ctx.$id;
+        return astCache[cacheId];
+    },
+    setParent (parent, bool = false) {
+        if (this.$parent) return false;
+
+        if (bool) {
+            parent.insertChild(this);
+        } else {
+            this.$parent = parent;
+            parent.appendChild(this);
+        }
+    },
+    appendChildren (children) {
+        children.forEach(child => {
+            this.appendChild(child);
+        });
+    },
+    destory () {
+        let index = this.$relationNode.$index;
+        this.$parent.$children.splice(index, 1);
+    },
+    appendChild (child) {
+        if (child.$parent) return false;
+        this.$children.push(child);
+        child.$parent = this;
+    },
+    insertChild (child) {
+        this.$children.unshift(child);
+        child.$parent = this;
+    },
+    removeChld (child) {
+        if (this.$self && this.$self.selectComponentApp && child.$self) {
+            this.$self.remove(child.$self);
+        }
+        this.$children = this.$children.filter(function (el) {
+            return el.$id !== child.$id;
+        });
+    }
+};
+
+module.exports = function (
+    node,
+    cb = () => {},
+    relationNode,
+    bool = false,
+    _bool = false
+) {
+    let RelationAst = {};
     /**
-       * component
-       */
-    wrapNode.$relationNode = relationNode;
-    RelationAst.$nodes[node.$id] = wrapNode;
-    RelationAst.$refNodes[route] = RelationAst.$refNodes[route] || {};
-    let componentNodes = RelationAst.$refNodes[route];
-    RelationAst.$refNodes[route][relationNode.$id] = RelationAst.$refNodes[route][relationNode.$id] || [];
-    componentNodes[relationNode.$id].push(wrapNode);
-
-    if (RelationAst.isPageReady) {
-        setTimeout(()=>{
-            connectNodes(wrapNode, RelationAst);
-            RelationAst.mountedHandles
-                .forEach(function (fn, i) {
-                    if (wrapNode.$parent) {
-                        fn();
-                    } else {
-                        setTimeout(()=>{
-                            fn();
-                        }, 0);
-                    }
-                });
-            RelationAst.mountedHandles = [];
-
-        }, 0);
+   *  dd 下页面 id 为 $viewId
+   * */
+    let cacheId = this.$page
+        ? this.$page.$id || this.$page.$viewId
+        : this.$viewId || this.$id;
+    if (_bool) {
+        return astCache[cacheId];
     }
+
+    if (bool || !astCache[cacheId]) {
+        astCache[cacheId] = createAstData();
+        return astCache[cacheId];
+    }
+
+    let _relationData = {};
+    if (!this.$page) {
+        _relationData = createAstData();
+        this.$antmove = this.$antmove || {};
+        this.$antmove.relationData = _relationData;
+        this.$antmove.astCache = astCache;
+    
+    } else {
+        _relationData = this.$page.$antmove.relationData;
+        astCache =  this.$page.$antmove.astCache;
+    
+    }
+
+    RelationAst = astCache[cacheId];
+    let wrapNode = null;
+ 
+    /**
+   *  二次 create 处理
+   *  */
+
+    let isRootNode = false;
+    if (relationNode.$id === "saveChildRef0") {
+        isRootNode = true;
+    }
+    if (
+        (node.$node && !isRootNode) 
+        || (node.$rootNode && isRootNode)) {
+            
+        if (isRootNode) {
+            wrapNode = node.$rootNode;
+        } else {
+            wrapNode = node.$node;
+        }
+    } else {
+      
+        if (isRootNode) {
+            wrapNode = new createNode(node, true);
+        } else {
+            wrapNode = new createNode(node);
+        }
+
+        let route = relationNode.$route;
+
+        RelationAst.$page = wrapNode;
+        /**
+     * component
+     */
+        wrapNode.$relationNode = relationNode;
+        RelationAst.$nodes[node.$id] = wrapNode;
+        RelationAst.$refNodes[route] = RelationAst.$refNodes[route] || {};
+        let componentNodes = RelationAst.$refNodes[route];
+        RelationAst.$refNodes[route][relationNode.$id] =
+      RelationAst.$refNodes[route][relationNode.$id] || [];
+        componentNodes[relationNode.$id].push(wrapNode);
+    }
+
+    connectNodes(wrapNode, RelationAst);
+
     cb && cb(RelationAst);
     return RelationAst;
 };

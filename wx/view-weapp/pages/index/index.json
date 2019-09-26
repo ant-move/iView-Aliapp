@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "iView Weapp",
+  "navigationBarTitleText": "iView Aliapp",
   "usingComponents": {
     "i-panel": "../../dist/panel/index",
     "i-cell-group": "../../dist/cell-group/index",

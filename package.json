@@ -1,15 +1,26 @@
 {
-    "name": "mini-iview",
-    "version": "0.1.1",
+    "name": "iview-aliapp",
+    "version": "1.0.1",
     "description": "alipay app components",
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "build": "antmove wx-alipay -i ./wx/view-weapp -o ./alipay/view-alipay"
+      "build": "antmove wx-alipay -i ./wx/view-weapp -o ./alipay/view-alipay",
+      "build-dd": "antmove wx-alipay -i ./wx/view-weapp -o ./dd/view-ddapp --component2 false --platform dd",
+    "build-npm": "rm -rf dist && cp -R alipay/view-aliapy dist && babel alipay/view-alipay -d dist && rm -rf dist/node_modules dist/.tea",
+    "pub": "npm run build && npm publish"
     },
     "publishConfig": {
       "access": "public",
       "registry": "https://registry.npmjs.org/"
+    },
+    "files": [
+      "dist"
+    ],
+    "devDependencies": {
+      "@babel/cli": "^7.0.0",
+      "@babel/core": "^7.5.5",
+      "@babel/preset-env": "^7.5.5"
     },
     "author": "amap-appx@service.autonavi.com",
     "license": "GPL-3.0"
