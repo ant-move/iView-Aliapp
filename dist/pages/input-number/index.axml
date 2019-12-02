@@ -1,0 +1,13 @@
+<view class='page-container-classname'>
+                <i-panel title='基础用法' onChildRef='saveChildRef1' _parent_ref="{{isMounted}}">
+  <view style='padding: 16px'>
+    <i-input-number value='{{ value1 }}' min='{{0}}' max='{{100}}' _parent_ref="{{isMounted}}" onChange='handleChange1' onChildRef='saveChildRef2'>
+    </i-input-number>
+  </view>
+</i-panel><i-panel title='小数' _parent_ref="{{isMounted}}" onChildRef='saveChildRef3'>
+  <view style='padding: 16px'>
+    <i-input-number value='{{ value2 }}' min='{{0}}' max='{{100}}' step='{{0.2}}' _parent_ref="{{isMounted}}" onChange='handleChange2' onChildRef='saveChildRef4'>
+    </i-input-number>
+  </view>
+</i-panel>
+            </view>

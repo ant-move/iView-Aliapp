@@ -1,10 +1,10 @@
 <view class='page-container-classname'>
-                <view class='i-steps-demo' onChildRef='saveChildRef0'>
+                <view class='i-steps-demo' ref='saveChildRef0'>
   <view class='one-tag'>
     基本用法
   </view>
-  <i-steps onChildRef='saveChildRef1'>
-    <i-step status='finish' _parent_ref="{{isMounted}}" onChildRef='saveChildRef2'>
+  <i-steps ref='saveChildRef1'>
+    <i-step status='finish' ref='saveChildRef2'>
       <view slot='title'>
         已完成
       </view>
@@ -12,7 +12,7 @@
         这里是该步骤的描述信息
       </view>
     </i-step>
-    <i-step status='process' _parent_ref="{{isMounted}}" onChildRef='saveChildRef3'>
+    <i-step status='process' ref='saveChildRef3'>
       <view slot='title'>
         进行中
       </view>
@@ -20,7 +20,7 @@
         这里是该步骤的描述信息
       </view>
     </i-step>
-    <i-step status=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef4'>
+    <i-step status=" " ref='saveChildRef4'>
       <view slot='title'>
         错误
       </view>
@@ -32,8 +32,8 @@
   <view class='one-tag'>
     使用 icon 图标
   </view>
-  <i-steps onChildRef='saveChildRef5'>
-    <i-step status='finish' icon='barrage' _parent_ref="{{isMounted}}" onChildRef='saveChildRef6'>
+  <i-steps ref='saveChildRef5'>
+    <i-step status='finish' icon='barrage' ref='saveChildRef6'>
       <view slot='title'>
         已完成
       </view>
@@ -41,7 +41,7 @@
         这里是该步骤的描述信息
       </view>
     </i-step>
-    <i-step status='process' icon='brush' _parent_ref="{{isMounted}}" onChildRef='saveChildRef7'>
+    <i-step status='process' icon='brush' ref='saveChildRef7'>
       <view slot='title'>
         进行中
       </view>
@@ -49,7 +49,7 @@
         这里是该步骤的描述信息
       </view>
     </i-step>
-    <i-step icon='collection' _parent_ref="{{isMounted}}" onChildRef='saveChildRef8'>
+    <i-step icon='collection' ref='saveChildRef8'>
       <view slot='title'>
         错误
       </view>
@@ -61,8 +61,8 @@
   <view class='one-tag'>
     步骤进度
   </view>
-  <i-steps current='{{current}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef9'>
-    <i-step onChildRef='saveChildRef10'>
+  <i-steps current='{{current}}' ref='saveChildRef9'>
+    <i-step ref='saveChildRef10'>
       <view slot='title'>
         已完成
       </view>
@@ -70,7 +70,7 @@
         这里是该步骤的描述信息
       </view>
     </i-step>
-    <i-step onChildRef='saveChildRef11'>
+    <i-step ref='saveChildRef11'>
       <view slot='title'>
         进行中
       </view>
@@ -78,7 +78,7 @@
         这里是该步骤的描述信息
       </view>
     </i-step>
-    <i-step onChildRef='saveChildRef12'>
+    <i-step ref='saveChildRef12'>
       <view slot='title'>
         错误
       </view>
@@ -87,14 +87,14 @@
       </view>
     </i-step>
   </i-steps>
-  <i-button onClick='handleClick' _parent_ref="{{isMounted}}" onChildRef='saveChildRef13'>
+  <i-button onClick='handleClick' ref='saveChildRef13'>
     下一步
   </i-button>
   <view class='one-tag'>
     垂直方向
   </view>
-  <i-steps current='{{verticalCurrent}}' direction='vertical' _parent_ref="{{isMounted}}" onChildRef='saveChildRef14'>
-    <i-step onChildRef='saveChildRef15'>
+  <i-steps current='{{verticalCurrent}}' direction='vertical' ref='saveChildRef14'>
+    <i-step ref='saveChildRef15'>
       <view slot='title'>
         已完成
       </view>
@@ -102,7 +102,7 @@
         这里是该步骤的描述信息
       </view>
     </i-step>
-    <i-step onChildRef='saveChildRef16'>
+    <i-step ref='saveChildRef16'>
       <view slot='title'>
         进行中
       </view>
@@ -110,7 +110,7 @@
         这里是该步骤的描述信息
       </view>
     </i-step>
-    <i-step onChildRef='saveChildRef17'>
+    <i-step ref='saveChildRef17'>
       <view slot='title'>
         错误
       </view>

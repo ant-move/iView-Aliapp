@@ -1376,5 +1376,18 @@ const apiObj = {startBeaconDiscovery:{fn: function fn (obj = {}) {
                     });
                 }
             }
+        },},hideHomeButton:{fn: function fn (obj = {}) {
+            let hideHomeButtonProps = descObj.hideHomeButton.body.params.props
+            let param = utils.defineGetter(obj, hideHomeButtonProps, function (obj, prop) {
+                    utils.warn(
+                        `hideHomeButton的返回值不支持 ${prop} 属性!`,
+                        {
+                            apiName: `hideHomeButton/${prop}`,
+                            errorType: hideHomeButtonProps[prop].type,
+                            type: 'api'
+                        }
+                    )
+                });
+           return my.hideBackHome(param);
         },},}
 module.exports = apiObj;

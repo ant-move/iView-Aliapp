@@ -1,4 +1,4 @@
-<view class='input-index {{className}}' onChildRef='saveChildRef0'>
+<view class='input-index {{className}}' ref='saveChildRef0'>
   <view class="{{iClass}} i-cell i-input {{ error ? 'i-input-error' : '' }} {{ mode === 'wrapped' ? 'i-input-wrapped' : '' }}">
     <view a:if='{{ title }}' class='i-cell-hd i-input-title'>
       {{ title }}

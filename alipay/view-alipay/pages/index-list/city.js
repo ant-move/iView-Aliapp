@@ -1,9 +1,3 @@
-my.setStorageSync({
-    key: "activeComponent",
-    data: {
-        is: "pages/index-list/index"
-    }
-});
 export const cities = [
     {
         label: "北京Beijing010",

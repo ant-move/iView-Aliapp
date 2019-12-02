@@ -1,4 +1,4 @@
-.i-grid-item {
+.grid-item-index .i-grid-item {
     position: relative;
     float: left;
     padding: 20px 10px;

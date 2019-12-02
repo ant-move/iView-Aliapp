@@ -2,17 +2,10 @@ const _Component = require("../../__antmove/component/componentClass.js")(
     "Component"
 );
 const _my = require("../../__antmove/api/index.js")(my);
-my.setStorageSync({
-    key: "activeComponent",
-    data: {
-        is: "dist/swipeout/index"
-    }
-});
 /*
  * touch事件判断方式
  * https://github.com/madrobby/zepto/blob/master/src/touch.js#files
  */
-
 function swipeDirection(x1, x2, y1, y2) {
     return Math.abs(x1 - x2) >= Math.abs(y1 - y2)
         ? x1 - x2 > 0

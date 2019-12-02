@@ -1,4 +1,4 @@
-.i-card {
+.card-index .i-card {
     margin: 0 16px;
     font-size: 14px;
     overflow: hidden;
@@ -7,22 +7,26 @@
     border: 1rpx solid #dddee1;
     border-radius: 5px;
 }
-.i-card-full {
+
+.card-index .i-card-full {
     margin: 0;
     border-left: none;
     border-right: none;
     border-radius: 0;
 }
-.i-card-header {
+
+.card-index .i-card-header {
     display: flex;
     padding: 6px 16px;
     align-items: center;
 }
-.i-card-header-content {
+
+.card-index .i-card-header-content {
     flex: 1;
     text-align: left;
 }
-.i-card-header-thumb {
+
+.card-index .i-card-header-thumb {
     display: inline-block;
     width: 64px;
     height: 64px;
@@ -33,25 +37,29 @@
     background-size: cover;
     vertical-align: middle;
 }
-.i-card-header-title {
+
+.card-index .i-card-header-title {
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;
     color: #1c2438;
 }
-.i-card-header-extra {
+
+.card-index .i-card-header-extra {
     flex: 1;
     text-align: right;
     font-size: 14px;
     color: #80848f;
 }
-.i-card-body {
+
+.card-index .i-card-body {
     position: relative;
     padding: 6px 16px;
     color: #495060;
     font-size: 14px;
 }
-.i-card-body::before {
+
+.card-index .i-card-body::before {
     content: "";
     position: absolute;
     top: 0;
@@ -65,7 +73,8 @@
     border: 0 solid #e9eaec;
     border-top-width: 1px;
 }
-.i-card-footer {
+
+.card-index .i-card-footer {
     position: relative;
     padding: 6px 16px;
     color: #80848f;

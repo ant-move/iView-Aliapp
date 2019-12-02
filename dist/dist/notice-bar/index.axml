@@ -1,0 +1,14 @@
+<view class='notice-bar-index {{className}}' onChildRef='saveChildRef0'>
+  <view a:if='{{ show }}' class='{{iClass}} i-noticebar' style='color: {{ color }}; background-color: {{ backgroundcolor }}'>
+    <i-icon a:if='{{ icon }}' type='{{ icon }}' size='{{24}}' color='{{color}}' class='i-noticebar-icon' _parent_ref="{{isMounted}}" onChildRef='saveChildRef1'>
+    </i-icon>
+    <view class='i-noticebar-content-wrap'>
+      <view class="i-noticebar-content {{loop?'i-noticebar-content-loop':''}}" animation='{{ animationData }}'>
+        <slot>
+        </slot>
+      </view>
+    </view>
+    <i-icon a:if='{{closable}}' class='i-noticebar-operation' type='close' size='{{20}}' color='{{color}}' _parent_ref="{{isMounted}}" onTap='handleClose' onChildRef='saveChildRef2'>
+    </i-icon>
+  </view>
+</view>

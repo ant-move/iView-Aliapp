@@ -2,13 +2,6 @@ const _Component = require("../../__antmove/component/componentClass.js")(
     "Component"
 );
 const _my = require("../../__antmove/api/index.js")(my);
-my.setStorageSync({
-    key: "activeComponent",
-    data: {
-        is: "dist/index-item/index"
-    }
-});
-
 _Component({
     externalClasses: ["i-class"],
     properties: {

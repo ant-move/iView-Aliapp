@@ -1,8 +1,8 @@
 <view class='page-container-classname'>
-                <i-panel title='主色' onChildRef='saveChildRef1' _parent_ref="{{isMounted}}">
-</i-panel><i-row onChildRef='saveChildRef2'>
-  <i-col i-class='color-col' span='{{12}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef3'>
-    <i-card i-class='color' _parent_ref="{{isMounted}}" onChildRef='saveChildRef4'>
+                <i-panel title='主色' ref='saveChildRef1'>
+</i-panel><i-row ref='saveChildRef2'>
+  <i-col i-class='color-col' span='{{12}}' ref='saveChildRef3'>
+    <i-card i-class='color' ref='saveChildRef4'>
       <view slot='content' class='color-item primary'>
         <view class='color-item-title'>
           Primary
@@ -13,8 +13,8 @@
       </view>
     </i-card>
   </i-col>
-  <i-col i-class='color-col' span='{{12}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef5'>
-    <i-card i-class='color' _parent_ref="{{isMounted}}" onChildRef='saveChildRef6'>
+  <i-col i-class='color-col' span='{{12}}' ref='saveChildRef5'>
+    <i-card i-class='color' ref='saveChildRef6'>
       <view slot='content' class='color-item light-primary'>
         <view class='color-item-title'>
           Light Primary
@@ -25,8 +25,8 @@
       </view>
     </i-card>
   </i-col>
-  <i-col i-class='color-col' span='{{12}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef7'>
-    <i-card i-class='color' _parent_ref="{{isMounted}}" onChildRef='saveChildRef8'>
+  <i-col i-class='color-col' span='{{12}}' ref='saveChildRef7'>
+    <i-card i-class='color' ref='saveChildRef8'>
       <view slot='content' class='color-item dark-primary'>
         <view class='color-item-title'>
           Dark Primary
@@ -37,10 +37,10 @@
       </view>
     </i-card>
   </i-col>
-</i-row><i-panel title='辅助色' _parent_ref="{{isMounted}}" onChildRef='saveChildRef9'>
-</i-panel><i-row onChildRef='saveChildRef10'>
-  <i-col i-class='color-col' span='{{12}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef11'>
-    <i-card i-class='color' _parent_ref="{{isMounted}}" onChildRef='saveChildRef12'>
+</i-row><i-panel title='辅助色' ref='saveChildRef9'>
+</i-panel><i-row ref='saveChildRef10'>
+  <i-col i-class='color-col' span='{{12}}' ref='saveChildRef11'>
+    <i-card i-class='color' ref='saveChildRef12'>
       <view slot='content' class='color-item success'>
         <view class='color-item-title'>
           Success
@@ -51,8 +51,8 @@
       </view>
     </i-card>
   </i-col>
-  <i-col i-class='color-col' span='{{12}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef13'>
-    <i-card i-class='color' _parent_ref="{{isMounted}}" onChildRef='saveChildRef14'>
+  <i-col i-class='color-col' span='{{12}}' ref='saveChildRef13'>
+    <i-card i-class='color' ref='saveChildRef14'>
       <view slot='content' class='color-item warning'>
         <view class='color-item-title'>
           Warning
@@ -63,8 +63,8 @@
       </view>
     </i-card>
   </i-col>
-  <i-col i-class='color-col' span='{{12}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef15'>
-    <i-card i-class='color' _parent_ref="{{isMounted}}" onChildRef='saveChildRef16'>
+  <i-col i-class='color-col' span='{{12}}' ref='saveChildRef15'>
+    <i-card i-class='color' ref='saveChildRef16'>
       <view slot='content' class='color-item error'>
         <view class='color-item-title'>
           Error
@@ -75,10 +75,10 @@
       </view>
     </i-card>
   </i-col>
-</i-row><i-panel title='中性色' _parent_ref="{{isMounted}}" onChildRef='saveChildRef17'>
-</i-panel><i-row onChildRef='saveChildRef18'>
-  <i-col i-class='color-col' span='{{12}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef19'>
-    <i-card i-class='color' _parent_ref="{{isMounted}}" onChildRef='saveChildRef20'>
+</i-row><i-panel title='中性色' ref='saveChildRef17'>
+</i-panel><i-row ref='saveChildRef18'>
+  <i-col i-class='color-col' span='{{12}}' ref='saveChildRef19'>
+    <i-card i-class='color' ref='saveChildRef20'>
       <view slot='content' class='color-item title'>
         <view class='color-item-title'>
           标题 Title
@@ -89,8 +89,8 @@
       </view>
     </i-card>
   </i-col>
-  <i-col i-class='color-col' span='{{12}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef21'>
-    <i-card i-class='color' _parent_ref="{{isMounted}}" onChildRef='saveChildRef22'>
+  <i-col i-class='color-col' span='{{12}}' ref='saveChildRef21'>
+    <i-card i-class='color' ref='saveChildRef22'>
       <view slot='content' class='color-item content'>
         <view class='color-item-title'>
           正文 Content
@@ -101,8 +101,8 @@
       </view>
     </i-card>
   </i-col>
-  <i-col i-class='color-col' span='{{12}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef23'>
-    <i-card i-class='color' _parent_ref="{{isMounted}}" onChildRef='saveChildRef24'>
+  <i-col i-class='color-col' span='{{12}}' ref='saveChildRef23'>
+    <i-card i-class='color' ref='saveChildRef24'>
       <view slot='content' class='color-item sub-color'>
         <view class='color-item-title'>
           辅助 Sub Color
@@ -113,8 +113,8 @@
       </view>
     </i-card>
   </i-col>
-  <i-col i-class='color-col' span='{{12}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef25'>
-    <i-card i-class='color' _parent_ref="{{isMounted}}" onChildRef='saveChildRef26'>
+  <i-col i-class='color-col' span='{{12}}' ref='saveChildRef25'>
+    <i-card i-class='color' ref='saveChildRef26'>
       <view slot='content' class='color-item disabled'>
         <view class='color-item-title'>
           失效 Disabled
@@ -125,8 +125,8 @@
       </view>
     </i-card>
   </i-col>
-  <i-col i-class='color-col' span='{{12}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef27'>
-    <i-card i-class='color' _parent_ref="{{isMounted}}" onChildRef='saveChildRef28'>
+  <i-col i-class='color-col' span='{{12}}' ref='saveChildRef27'>
+    <i-card i-class='color' ref='saveChildRef28'>
       <view slot='content' class='color-item border dark'>
         <view class='color-item-title'>
           边框 Border
@@ -137,8 +137,8 @@
       </view>
     </i-card>
   </i-col>
-  <i-col i-class='color-col' span='{{12}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef29'>
-    <i-card i-class='color' _parent_ref="{{isMounted}}" onChildRef='saveChildRef30'>
+  <i-col i-class='color-col' span='{{12}}' ref='saveChildRef29'>
+    <i-card i-class='color' ref='saveChildRef30'>
       <view slot='content' class='color-item divider dark'>
         <view class='color-item-title'>
           分割线 Divider
@@ -149,8 +149,8 @@
       </view>
     </i-card>
   </i-col>
-  <i-col i-class='color-col' span='{{12}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef31'>
-    <i-card i-class='color' _parent_ref="{{isMounted}}" onChildRef='saveChildRef32'>
+  <i-col i-class='color-col' span='{{12}}' ref='saveChildRef31'>
+    <i-card i-class='color' ref='saveChildRef32'>
       <view slot='content' class='color-item background dark'>
         <view class='color-item-title'>
           背景 Background

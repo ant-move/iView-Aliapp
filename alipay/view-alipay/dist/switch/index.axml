@@ -1,4 +1,4 @@
-<view class='switch-index {{className}}' onChildRef='saveChildRef0'>
+<view class='switch-index {{className}}' ref='saveChildRef0'>
   <import-sjs from="./index.axmlparse.sjs" name='parse'>
   </import-sjs>
   <view class='{{iClass}} i-switch {{parse.setSize(size)}} {{parse.setCurrent(value,disabled)}}' onTap='toggle'>

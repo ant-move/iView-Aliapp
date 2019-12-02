@@ -1,11 +1,11 @@
 <view class='page-container-classname'>
-                <view class='i-sticky-demo-des' onChildRef='saveChildRef0'>
+                <view class='i-sticky-demo-des' ref='saveChildRef0'>
   注: 1.由于组件内部不能使用onPageScroll,导致不能监听scrollTop值只能通过用户用props传递。
 </view><view class='i-sticky-demo-des'>
   2.在微信开发客户端显示的时候会有bug。不停计算scrollTop值不能同步
 </view><view class='i-sticky-demo'>
-  <i-sticky scrollTop='{{scrollTop}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef1'>
-    <i-sticky-item i-class='i-sticky-demo-title' _parent_ref="{{isMounted}}" onChildRef='saveChildRef2'>
+  <i-sticky scrollTop='{{scrollTop}}' ref='saveChildRef1'>
+    <i-sticky-item i-class='i-sticky-demo-title' ref='saveChildRef2'>
       <view slot='title'>
         逻辑层
       </view>
@@ -30,7 +30,7 @@
         </view>
       </view>
     </i-sticky-item>
-    <i-sticky-item i-class='i-sticky-demo-title' _parent_ref="{{isMounted}}" onChildRef='saveChildRef3'>
+    <i-sticky-item i-class='i-sticky-demo-title' ref='saveChildRef3'>
       <view slot='title'>
         视图层
       </view>
@@ -55,7 +55,7 @@
         </view>
       </view>
     </i-sticky-item>
-    <i-sticky-item i-class='i-sticky-demo-title' _parent_ref="{{isMounted}}" onChildRef='saveChildRef4'>
+    <i-sticky-item i-class='i-sticky-demo-title' ref='saveChildRef4'>
       <view slot='title'>
         自定义组件
       </view>
@@ -98,7 +98,7 @@
         </view>
       </view>
     </i-sticky-item>
-    <i-sticky-item i-class='i-sticky-demo-title' _parent_ref="{{isMounted}}" onChildRef='saveChildRef5'>
+    <i-sticky-item i-class='i-sticky-demo-title' ref='saveChildRef5'>
       <view slot='title'>
         插件
       </view>

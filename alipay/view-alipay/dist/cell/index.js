@@ -2,13 +2,6 @@ const _Component = require("../../__antmove/component/componentClass.js")(
     "Component"
 );
 const _my = require("../../__antmove/api/index.js")(my);
-my.setStorageSync({
-    key: "activeComponent",
-    data: {
-        is: "dist/cell/index"
-    }
-});
-
 const warn = (msg, getValue) => {
     console.warn(msg);
     console.log("接受到的值为：", getValue);

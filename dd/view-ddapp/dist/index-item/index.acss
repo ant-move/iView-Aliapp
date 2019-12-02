@@ -1,4 +1,4 @@
-.i-index-item-header {
+.index-item-index .i-index-item-header {
     height: 30px;
     line-height: 30px;
     background: #eee;
@@ -7,6 +7,7 @@
     width: 100%;
     box-sizing: border-box;
 }
-.i-index-item-content {
+
+.index-item-index .i-index-item-content {
     font-size: 14px;
 }

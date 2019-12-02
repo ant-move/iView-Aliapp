@@ -1,0 +1,20 @@
+<view class='page-container-classname'>
+                <view style='margin-top: 100px' onChildRef='saveChildRef0'>
+  <i-button type='ghost' _parent_ref="{{isMounted}}" onClick='handleDefault' onChildRef='saveChildRef1'>
+    默认提醒
+  </i-button>
+  <i-button type='ghost' _parent_ref="{{isMounted}}" onClick='handleSuccess' onChildRef='saveChildRef2'>
+    成功提醒
+  </i-button>
+  <i-button type='ghost' _parent_ref="{{isMounted}}" onClick='handleWarning' onChildRef='saveChildRef3'>
+    警告提醒
+  </i-button>
+  <i-button type='ghost' _parent_ref="{{isMounted}}" onClick='handleError' onChildRef='saveChildRef4'>
+    错误提醒
+  </i-button>
+  <i-button type='ghost' _parent_ref="{{isMounted}}" onClick='handleDuration' onChildRef='saveChildRef5'>
+    自定义持续时间
+  </i-button>
+</view><i-message id='message' _parent_ref="{{isMounted}}" onChildRef='saveChildRef6'>
+</i-message>
+            </view>

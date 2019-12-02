@@ -1,11 +1,11 @@
 <view class='page-container-classname'>
-                <i-cell-group onChildRef='saveChildRef1' _parent_ref="{{isMounted}}">
-  <i-cell title='基本用法' _parent_ref="{{isMounted}}" onChildRef='saveChildRef2'>
-    <i-switch value='{{switch1}}' slot='footer' _parent_ref="{{isMounted}}" onChange='onChange' onChildRef='saveChildRef3'>
+                <i-cell-group ref='saveChildRef1'>
+  <i-cell title='基本用法' ref='saveChildRef2'>
+    <i-switch value='{{switch1}}' slot='footer' onChange='onChange' ref='saveChildRef3'>
     </i-switch>
   </i-cell>
-  <i-cell title='自定义内容' _parent_ref="{{isMounted}}" onChildRef='saveChildRef4'>
-    <i-switch value='{{switch1}}' size='large' slot='footer' _parent_ref="{{isMounted}}" onChange='onChange' onChildRef='saveChildRef5'>
+  <i-cell title='自定义内容' ref='saveChildRef4'>
+    <i-switch value='{{switch1}}' size='large' slot='footer' onChange='onChange' ref='saveChildRef5'>
       <view slot='open'>
         开启
       </view>
@@ -14,16 +14,16 @@
       </view>
     </i-switch>
   </i-cell>
-  <i-cell title='图标' _parent_ref="{{isMounted}}" onChildRef='saveChildRef6'>
-    <i-switch value='{{switch1}}' slot='footer' _parent_ref="{{isMounted}}" onChange='onChange' onChildRef='saveChildRef7'>
-      <i-icon type='right' slot='open' _parent_ref="{{isMounted}}" onChildRef='saveChildRef8'>
+  <i-cell title='图标' ref='saveChildRef6'>
+    <i-switch value='{{switch1}}' slot='footer' onChange='onChange' ref='saveChildRef7'>
+      <i-icon type='right' slot='open' ref='saveChildRef8'>
       </i-icon>
-      <i-icon type='close' slot='close' _parent_ref="{{isMounted}}" onChildRef='saveChildRef9'>
+      <i-icon type='close' slot='close' ref='saveChildRef9'>
       </i-icon>
     </i-switch>
   </i-cell>
-  <i-cell title='禁止切换' _parent_ref="{{isMounted}}" onChildRef='saveChildRef10'>
-    <i-switch value='{{switch1}}' disabled='{{true}}' slot='footer' _parent_ref="{{isMounted}}" onChildRef='saveChildRef11'>
+  <i-cell title='禁止切换' ref='saveChildRef10'>
+    <i-switch value='{{switch1}}' disabled='{{true}}' slot='footer' ref='saveChildRef11'>
     </i-switch>
   </i-cell>
 </i-cell-group>

@@ -1,22 +1,26 @@
-.i-panel {
+.panel-index .i-panel {
     position: relative;
     overflow: hidden;
 }
-.i-panel-title {
+
+.panel-index .i-panel-title {
     font-size: 14px;
     line-height: 1;
     color: #1c2438;
     padding: 20px 16px 10px;
 }
-.i-panel-title-hide-top {
+
+.panel-index .i-panel-title-hide-top {
     padding-top: 0;
 }
-.i-panel-content {
+
+.panel-index .i-panel-content {
     position: relative;
     background: #fff;
     overflow: hidden;
 }
-.i-panel-content::after {
+
+.panel-index .i-panel-content::after {
     content: "";
     position: absolute;
     top: 0;
@@ -31,6 +35,7 @@
     border-top-width: 1px;
     border-bottom-width: 1px;
 }
-.i-panel-without-border::after {
+
+.panel-index .i-panel-without-border::after {
     border: 0 none;
 }

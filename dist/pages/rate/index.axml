@@ -1,0 +1,31 @@
+<view class='page-container-classname'>
+                <i-cell-group onChildRef='saveChildRef1' _parent_ref="{{isMounted}}">
+  <i-cell title='基本用法' _parent_ref="{{isMounted}}" onChildRef='saveChildRef2'>
+    <i-rate value='{{starIndex1}}' onChange='onChange1' _parent_ref="{{isMounted}}" onChildRef='saveChildRef3'>
+    </i-rate>
+  </i-cell>
+  <i-cell title='自定义星星个数' _parent_ref="{{isMounted}}" onChildRef='saveChildRef4'>
+    <i-rate count='{{10}}' value='{{starIndex5}}' onChange='onChange5' _parent_ref="{{isMounted}}" onChildRef='saveChildRef5'>
+    </i-rate>
+  </i-cell>
+  <i-cell title='自定义星星大小' _parent_ref="{{isMounted}}" onChildRef='saveChildRef6'>
+    <i-rate value='{{starIndex2}}' size='{{32}}' onChange='onChange2' _parent_ref="{{isMounted}}" onChildRef='saveChildRef7'>
+    </i-rate>
+  </i-cell>
+  <i-cell title='自定义文字说明' _parent_ref="{{isMounted}}" onChildRef='saveChildRef8'>
+    <i-rate value='{{starIndex2}}' onChange='onChange2' _parent_ref="{{isMounted}}" onChildRef='saveChildRef9'>
+      {{starIndex2}}星
+    </i-rate>
+  </i-cell>
+  <i-cell title='手势touch选择星' _parent_ref="{{isMounted}}" onChildRef='saveChildRef10'>
+    <i-rate value='{{starIndex3}}' onChange='onChange3' _parent_ref="{{isMounted}}" onChildRef='saveChildRef11'>
+      {{starIndex3}}星
+    </i-rate>
+  </i-cell>
+  <i-cell title='禁用点击和手势选择星' _parent_ref="{{isMounted}}" onChildRef='saveChildRef12'>
+    <i-rate disabled='{{true}}' value='{{starIndex4}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef13'>
+      {{starIndex4}}星
+    </i-rate>
+  </i-cell>
+</i-cell-group>
+            </view>

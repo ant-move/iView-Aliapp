@@ -1,11 +1,4 @@
 const _Page = require("../../__antmove/component/componentClass.js")("Page");
-my.setStorageSync({
-    key: "activeComponent",
-    data: {
-        is: "pages/toast/index"
-    }
-});
-
 const { $Toast } = require("../../dist/base/index");
 
 _Page({

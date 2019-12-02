@@ -1,0 +1,15 @@
+<view class='page-container-classname'>
+                <i-panel title='group-水果' onChildRef='saveChildRef1' _parent_ref="{{isMounted}}">
+  <i-radio-group current='{{current}}' _parent_ref="{{isMounted}}" onChange='handleFruitChange' onChildRef='saveChildRef2'>
+    <i-radio a:for='{{fruit}}' position='{{position}}' a:key='*this' value='{{item.name}}' ref-numbers='{{fruit}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef3'>
+    </i-radio>
+  </i-radio-group>
+</i-panel><i-button type='ghost' onClick='handleClick' _parent_ref="{{isMounted}}" onChildRef='saveChildRef4'>
+  切换单选框位置
+</i-button><i-panel title='radio-动物' _parent_ref="{{isMounted}}" onChildRef='saveChildRef5'>
+  <i-radio value='{{animal}}' disabled='{{disabled}}' checked='{{checked}}' _parent_ref="{{isMounted}}" onChange='handleAnimalChange' onChildRef='saveChildRef6'>
+  </i-radio>
+</i-panel><i-button type='ghost' onClick='handleDisabled' _parent_ref="{{isMounted}}" onChildRef='saveChildRef7'>
+  切换disabled状态
+</i-button>
+            </view>

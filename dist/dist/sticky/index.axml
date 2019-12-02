@@ -1,0 +1,6 @@
+<view class='sticky-index {{className}}' onChildRef='saveChildRef0'>
+  <view class='i-sticky {{iClass}}'>
+    <slot>
+    </slot>
+  </view>
+</view>

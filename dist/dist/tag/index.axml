@@ -1,0 +1,5 @@
+<import-sjs onChildRef='saveChildRef0' from="./index.axmlparse.sjs" name='parse'>
+</import-sjs><view unscope-style=" " class="{{iClass}} i-tag {{ parse.getClass(color,type,checked,checkable) }} {{checkable ? '' : 'i-tag-disable'}}" onTap='tapTag'>
+  <slot>
+  </slot>
+</view>

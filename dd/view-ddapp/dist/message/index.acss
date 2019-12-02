@@ -1,4 +1,4 @@
-.i-message {
+.message-index .i-message {
     display: block;
     width: 100%;
     min-height: 32px;
@@ -16,19 +16,24 @@
     -webkit-transform: translateZ(0) translateY(-100%);
     transition: all 0.4s ease-in-out;
 }
-.i-message-show {
+
+.message-index .i-message-show {
     -webkit-transform: translateZ(0) translateY(0);
     opacity: 1;
 }
-.i-message-default {
+
+.message-index .i-message-default {
     background: #2d8cf0;
 }
-.i-message-success {
+
+.message-index .i-message-success {
     background: #19be6b;
 }
-.i-message-warning {
+
+.message-index .i-message-warning {
     background: #f90;
 }
-.i-message-error {
+
+.message-index .i-message-error {
     background: #ed3f14;
 }

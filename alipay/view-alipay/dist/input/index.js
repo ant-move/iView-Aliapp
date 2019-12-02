@@ -1,13 +1,6 @@
 const _Component = require("../../__antmove/component/componentClass.js")(
     "Component"
 );
-my.setStorageSync({
-    key: "activeComponent",
-    data: {
-        is: "dist/input/index"
-    }
-});
-
 _Component({
     behaviors: ["wx://form-field"],
     externalClasses: ["i-class"],

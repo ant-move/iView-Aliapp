@@ -1,0 +1,13 @@
+<view class='checkbox-index {{className}}' onChildRef='saveChildRef0'>
+  <view class='{{iClass}} i-checkbox' catchTap='checkboxChange'>
+    <i-cell i-class='i-checkbox-cell' _parent_ref="{{isMounted}}" onChildRef='saveChildRef1'>
+      <label>
+        <radio value='{{value}}' checked='{{checked}}' color="{{checked?color:''}}" disabled='{{disabled}}' class='i-checkbox-radio {{positionCls}}'>
+        </radio>
+        <view class='i-checkbox-title'>
+          {{value}}
+        </view>
+      </label>
+    </i-cell>
+  </view>
+</view>

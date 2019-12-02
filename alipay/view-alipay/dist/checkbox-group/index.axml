@@ -1,5 +1,5 @@
-<view class='checkbox-group-index {{className}}' onChildRef='saveChildRef0'>
-  <i-cell-group class='{{iClass}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef1'>
+<view class='checkbox-group-index {{className}}' ref='saveChildRef0'>
+  <i-cell-group class='{{iClass}}' ref='saveChildRef1'>
     <slot>
     </slot>
   </i-cell-group>

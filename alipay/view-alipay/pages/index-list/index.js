@@ -1,11 +1,5 @@
 const _Page = require("../../__antmove/component/componentClass.js")("Page");
 const _my = require("../../__antmove/api/index.js")(my);
-my.setStorageSync({
-    key: "activeComponent",
-    data: {
-        is: "pages/index-list/index"
-    }
-});
 import { cities } from "./city";
 
 _Page({

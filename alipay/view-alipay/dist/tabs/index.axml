@@ -1,4 +1,4 @@
-<view class='tabs-index {{className}}' onChildRef='saveChildRef0'>
+<view class='tabs-index {{className}}' ref='saveChildRef0'>
   <scroll-view a:if='{{ scroll }}' scroll-x='true' class="{{iClass}} i-tabs i-tabs-scroll {{ fixed ? 'i-tabs-fixed' : '' }}">
     <slot>
     </slot>

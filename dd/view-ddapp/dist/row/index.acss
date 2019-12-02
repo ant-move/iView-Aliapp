@@ -1,4 +1,4 @@
-.i-row:after {
+.row-index .i-row:after {
     content: "";
     display: table;
     clear: both;

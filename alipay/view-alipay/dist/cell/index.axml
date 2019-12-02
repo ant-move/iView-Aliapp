@@ -1,4 +1,4 @@
-<view unscope-style=" " class="{{iClass}} i-cell {{ isLastCell ? 'i-cell-last' : '' }} {{ isLink ? 'i-cell-access' : '' }}" onChildRef='saveChildRef0' onTap='handleTap'>
+<view unscope-style=" " class="{{iClass}} i-cell {{ isLastCell ? 'i-cell-last' : '' }} {{ isLink ? 'i-cell-access' : '' }}" ref='saveChildRef0' onTap='handleTap'>
   <view class='i-cell-icon'>
     <slot name='icon'>
     </slot>

@@ -1,0 +1,57 @@
+<view class='page-container-classname'>
+                <i-alert onChildRef='saveChildRef1' _parent_ref="{{isMounted}}">
+  An info prompt
+</i-alert><i-alert type='success' _parent_ref="{{isMounted}}" onChildRef='saveChildRef2'>
+  An success prompt
+</i-alert><i-alert type='warning' _parent_ref="{{isMounted}}" onChildRef='saveChildRef3'>
+  An warning prompt
+</i-alert><i-alert type='error' _parent_ref="{{isMounted}}" onChildRef='saveChildRef4'>
+  An error prompt
+</i-alert><i-alert type='info' _parent_ref="{{isMounted}}" onChildRef='saveChildRef5'>
+  An info prompt  <view slot='desc'>
+    Content of prompt. Content of prompt.
+  </view>
+</i-alert><i-alert type='success' _parent_ref="{{isMounted}}" onChildRef='saveChildRef6'>
+  An success prompt  <view slot='desc'>
+    Content of prompt. Content of prompt.
+  </view>
+</i-alert><i-alert type='warning' _parent_ref="{{isMounted}}" onChildRef='saveChildRef7'>
+  An warning prompt  <view slot='desc'>
+    Content of prompt. Content of prompt.
+  </view>
+</i-alert><i-alert type='error' _parent_ref="{{isMounted}}" onChildRef='saveChildRef8'>
+  An error prompt  <view slot='desc'>
+    Content of prompt. Content of prompt.
+  </view>
+</i-alert><i-alert type='info' show-icon=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef9'>
+  An info prompt
+</i-alert><i-alert type='success' show-icon=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef10'>
+  An success prompt
+</i-alert><i-alert type='warning' show-icon=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef11'>
+  An warning prompt
+</i-alert><i-alert type='error' show-icon=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef12'>
+  An error prompt
+</i-alert><i-alert show-icon=" " desc=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef13'>
+  An info prompt  <view slot='desc'>
+    Content of prompt. Content of prompt.
+  </view>
+</i-alert><i-alert type='success' show-icon=" " desc=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef14'>
+  An success prompt  <view slot='desc'>
+    Content of prompt. Content of prompt.
+  </view>
+</i-alert><i-alert type='warning' show-icon=" " desc=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef15'>
+  An warning prompt  <view slot='desc'>
+    Content of prompt. Content of prompt.
+  </view>
+</i-alert><i-alert type='error' show-icon=" " desc=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef16'>
+  An error prompt  <view slot='desc'>
+    Content of prompt. Content of prompt.
+  </view>
+</i-alert><i-alert closable=" " _parent_ref="{{isMounted}}" onClose='handleClick' onChildRef='saveChildRef17'>
+  An info prompt
+</i-alert><i-alert type='success' show-icon=" " desc=" " closable=" " _parent_ref="{{isMounted}}" onClose='handleClick' onChildRef='saveChildRef18'>
+  An success prompt  <view slot='desc'>
+    Content of prompt. Content of prompt.
+  </view>
+</i-alert>
+            </view>

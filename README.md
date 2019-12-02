@@ -10,6 +10,11 @@
 * [iView Aliapp 文档](https://ant-move.github.io/iview-alipay-docs/)
 * [iView weapp 文档](https://weapp.iviewui.com)
 
+## npm
+
+> 切记通过 antmove-compiler 命令编译
+* [dd](https://www.npmjs.com/package/iview-aliapp-dd)
+* [alipay](https://www.npmjs.com/package/iview-aliapp)
 
 > 大部分组件都保留了原有的用法，只有一两个做了少许的改动。
 

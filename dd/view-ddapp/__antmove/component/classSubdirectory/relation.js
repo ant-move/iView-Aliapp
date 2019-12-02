@@ -111,7 +111,6 @@ module.exports = function (
         _ctx.$antmove.relationData = _relationData;
         _ctx.$antmove.astCache = astCache;
     }
-
     if (!this.$page) {
         initData.call(this);
     } else {

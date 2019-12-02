@@ -1,4 +1,4 @@
-<view class='grid-index {{className}}' onChildRef='saveChildRef0'>
+<view class='grid-index {{className}}' ref='saveChildRef0'>
   <view class='{{iClass}} i-grid'>
     <slot>
     </slot>

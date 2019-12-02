@@ -1,11 +1,4 @@
 const _Page = require("../../__antmove/component/componentClass.js")("Page");
-my.setStorageSync({
-    key: "activeComponent",
-    data: {
-        is: "pages/action-sheet/index"
-    }
-});
-
 const { $Message } = require("../../dist/base/index");
 
 _Page({

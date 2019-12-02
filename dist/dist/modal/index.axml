@@ -1,0 +1,58 @@
+<view class='modal-index {{className}}' onChildRef='saveChildRef0'>
+  <view class="i-modal-mask {{iClassMask}} {{ visible ? 'i-modal-mask-show' : '' }}">
+  </view>
+  <view class="{{iClass}} i-modal {{ visible ? 'i-modal-show' : '' }}">
+    <view class='i-modal-main'>
+      <view class='i-modal-content'>
+        <view class='i-modal-title' a:if='{{ title }}'>
+          {{ title }}
+        </view>
+        <view class='i-modal-body'>
+          <slot>
+          </slot>
+        </view>
+        <view class='i-modal-actions' a:if='{{ actions.length }}'>
+          <block a:if="{{ actionMode === 'horizontal' }}">
+            <i-grid i-class='i-modal-grid' _parent_ref="{{isMounted}}" onChildRef='saveChildRef1'>
+              <i-grid-item i-class="{{ actions.length === (index + 1) ? 'i-modal-grid-item-last' : 'i-modal-grid-item' }}" a:for='{{ actions }}' a:key='*this' ref-numbers='{{ actions }}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef2'>
+                <template is='button' data='{{ item, index }}'>
+                </template>
+              </i-grid-item>
+            </i-grid>
+          </block>
+          <block a:else >
+            <view class='i-modal-action-vertical' a:for='{{ actions }}' a:key='{{ item.name }}' ref-numbers='{{ actions }}'>
+              <template is='button' data='{{ item, index }}'>
+              </template>
+            </view>
+          </block>
+        </view>
+        <view class='i-modal-actions' a:else >
+          <i-grid i-class='i-modal-grid' a:if='{{ showOk || showCancel }}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef3'>
+            <i-grid-item i-class='i-modal-grid-item' a:if='{{ showCancel }}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef4'>
+              <i-button i-class='i-modal-btn-cancel' long=" " type='ghost' _parent_ref="{{isMounted}}" onClick='handleClickCancel' onChildRef='saveChildRef5'>
+                {{ cancelText }}
+              </i-button>
+            </i-grid-item>
+            <i-grid-item i-class='i-modal-grid-item-last' a:if='{{ showOk }}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef6'>
+              <i-button i-class='i-modal-btn-ok' long=" " type='ghost' _parent_ref="{{isMounted}}" onClick='handleClickOk' onChildRef='saveChildRef7'>
+                {{ okText }}
+              </i-button>
+            </i-grid-item>
+          </i-grid>
+        </view>
+      </view>
+    </view>
+  </view>
+  <template name='button'>
+    <i-button long=" " type='ghost' data-index='{{ index }}' _parent_ref="{{isMounted}}" onClick='handleClickItem' onChildRef='saveChildRef8'>
+      <view class='i-modal-btn-loading' a:if='{{ item.loading }}'>
+      </view>
+      <i-icon a:if='{{ item.icon }}' type='{{ item.icon }}' i-class='i-modal-btn-icon' _parent_ref="{{isMounted}}" onChildRef='saveChildRef9'>
+      </i-icon>
+      <view class='i-modal-btn-text' style="{{ item.color ? 'color: ' + item.color : '' }}">
+        {{ item.name }}
+      </view>
+    </i-button>
+  </template>
+</view>

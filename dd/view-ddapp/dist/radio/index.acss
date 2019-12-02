@@ -1,16 +1,20 @@
-.i-radio-cell::after {
+.radio-index .i-radio-cell::after {
     display: block;
 }
-.i-radio-radio-left {
+
+.radio-index .i-radio-radio-left {
     float: left;
 }
-.i-radio-radio-right {
+
+.radio-index .i-radio-radio-right {
     float: right;
 }
-.i-radio-radio {
+
+.radio-index .i-radio-radio {
     vertical-align: middle;
 }
-.i-radio-title {
+
+.radio-index .i-radio-title {
     display: inline-block;
     vertical-align: middle;
 }

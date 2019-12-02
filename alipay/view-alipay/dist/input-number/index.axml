@@ -1,4 +1,4 @@
-<view class='input-number-index {{className}}' onChildRef='saveChildRef0'>
+<view class='input-number-index {{className}}' ref='saveChildRef0'>
   <view class='{{iClass}} i-input-number i-input-number-size-{{ size }}'>
     <view class="i-input-number-minus {{ value <= min ? 'i-input-number-disabled' : '' }}" data-disabled='{{ value <= min }}' onTap='handleMinus'>
       -

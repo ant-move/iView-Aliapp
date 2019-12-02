@@ -1,0 +1,28 @@
+<view class='action-sheet-index {{className}}' onChildRef='saveChildRef0'>
+  <view class="i-as-mask {{iClassMask}} {{ visible ? 'i-as-mask-show' : '' }}" onTap='handleClickMask'>
+  </view>
+  <view class="{{iClass}} i-as {{ visible ? 'i-as-show' : '' }}">
+    <view class='i-as-header {{iClassHeader}}'>
+      <slot name='header'>
+      </slot>
+    </view>
+    <view class='i-as-actions'>
+      <view class='i-as-action-item' a:for='{{ actions }}' a:key='{{ item.name }}' ref-numbers='{{ actions }}'>
+        <i-button data-index='{{ index }}' open-type='{{ item.openType }}' type='ghost' size='large' long=" " onClick='handleClickItem' _parent_ref="{{isMounted}}" onChildRef='saveChildRef1'>
+          <view class='i-as-btn-loading' a:if='{{ item.loading }}'>
+          </view>
+          <i-icon a:if='{{ item.icon }}' type='{{ item.icon }}' i-class='i-as-btn-icon' _parent_ref="{{isMounted}}" onChildRef='saveChildRef2'>
+          </i-icon>
+          <view class='i-as-btn-text' style="{{ item.color ? 'color: ' + item.color : '' }}">
+            {{ item.name }}
+          </view>
+        </i-button>
+      </view>
+    </view>
+    <view class='i-as-cancel' a:if='{{ showCancel }}'>
+      <i-button i-class='i-as-cancel-btn' type='ghost' size='large' long='true' _parent_ref="{{isMounted}}" onClick='handleClickCancel' onChildRef='saveChildRef3'>
+        {{ cancelText }}
+      </i-button>
+    </view>
+  </view>
+</view>

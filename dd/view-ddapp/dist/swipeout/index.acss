@@ -1,21 +1,24 @@
-.i-swipeout-wrap {
+.swipeout-index .i-swipeout-wrap {
     border-bottom: #dddee1 solid 1px;
     background: #fff;
     position: relative;
     overflow: hidden;
 }
-.i-swipeout-item {
+
+.swipeout-index .i-swipeout-item {
     width: 100%;
     padding: 15px 20px;
     box-sizing: border-box;
     transition: transform 0.2s ease;
     font-size: 14px;
 }
-.i-swipeout-content {
+
+.swipeout-index .i-swipeout-content {
     white-space: nowrap;
     overflow: hidden;
 }
-.i-swipeout-button-right-group {
+
+.swipeout-index .i-swipeout-button-right-group {
     position: absolute;
     right: -100%;
     top: 0;
@@ -23,7 +26,8 @@
     z-index: 1;
     width: 100%;
 }
-.i-swipeout-button-right-item {
+
+.swipeout-index .i-swipeout-button-right-item {
     height: 100%;
     float: left;
     white-space: nowrap;

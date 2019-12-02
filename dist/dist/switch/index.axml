@@ -1,0 +1,16 @@
+<view class='switch-index {{className}}' onChildRef='saveChildRef0'>
+  <import-sjs from="./index.axmlparse.sjs" name='parse'>
+  </import-sjs>
+  <view class='{{iClass}} i-switch {{parse.setSize(size)}} {{parse.setCurrent(value,disabled)}}' onTap='toggle'>
+    <input type='text' :name='name' a:value='{{value}}' class='i-switch-hide-input'>
+    </input>
+    <view class='i-switch-inner' a:if='{{value === true}}'>
+      <slot name='open'>
+      </slot>
+    </view>
+    <view class='i-switch-inner' a:else >
+      <slot name='close'>
+      </slot>
+    </view>
+  </view>
+</view>

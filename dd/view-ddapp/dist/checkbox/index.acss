@@ -1,16 +1,20 @@
-.i-checkbox-cell::after {
+.checkbox-index .i-checkbox-cell::after {
     display: block;
 }
-.i-checkbox-checkbox-left {
+
+.checkbox-index .i-checkbox-checkbox-left {
     float: left;
 }
-.i-checkbox-checkbox-right {
+
+.checkbox-index .i-checkbox-checkbox-right {
     float: right;
 }
-.i-checkbox-radio {
+
+.checkbox-index .i-checkbox-radio {
     vertical-align: middle;
 }
-.i-checkbox-title {
+
+.checkbox-index .i-checkbox-title {
     display: inline-block;
     vertical-align: middle;
 }

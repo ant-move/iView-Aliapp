@@ -1,0 +1,31 @@
+const _Component = require("../../__antmove/component/componentClass.js")("Component");
+
+my.setStorageSync({
+  key: "activeComponent",
+  data: {
+    is: "dist/progress/index"
+  }
+});
+
+_Component({
+  externalClasses: ["i-class"],
+  properties: {
+    percent: {
+      type: Number,
+      value: 0
+    },
+    // normal || active || wrong || success
+    status: {
+      type: String,
+      value: "normal"
+    },
+    strokeWidth: {
+      type: Number,
+      value: 10
+    },
+    hideInfo: {
+      type: Boolean,
+      value: false
+    }
+  }
+});

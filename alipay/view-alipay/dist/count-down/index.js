@@ -1,13 +1,6 @@
 const _Component = require("../../__antmove/component/componentClass.js")(
     "Component"
 );
-my.setStorageSync({
-    key: "activeComponent",
-    data: {
-        is: "dist/count-down/index"
-    }
-});
-
 _Component({
     properties: {
         target: Number,
@@ -73,9 +66,7 @@ _Component({
                 const minute = this.formatNum(parseInt(lastTime / 60));
                 const second = this.formatNum(lastTime % 60);
                 if (data.changeFormat)
-                    time = `${hour}${format[1]}${minute}${format[2]}${second}${
-                        format[3]
-                    }`;
+                    time = `${hour}${format[1]}${minute}${format[2]}${second}${format[3]}`;
                 else time = `${hour}:${minute}:${second}`;
                 if (!data.clearTimer) this.init.call(this);
             } else {

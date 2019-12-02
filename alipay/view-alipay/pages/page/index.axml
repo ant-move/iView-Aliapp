@@ -1,34 +1,34 @@
 <view class='page-container-classname'>
-                <i-panel title='带有文字的按钮' onChildRef='saveChildRef1' _parent_ref="{{isMounted}}">
-</i-panel><i-page current='{{ current }}' total='{{5}}' _parent_ref="{{isMounted}}" onChange='handleChange' onChildRef='saveChildRef2'>
+                <i-panel title='带有文字的按钮' ref='saveChildRef1'>
+</i-panel><i-page current='{{ current }}' total='{{5}}' onChange='handleChange' ref='saveChildRef2'>
   <view slot='prev'>
     Prev
   </view>
   <view slot='next'>
     Next
   </view>
-</i-page><i-panel title='带有文字和图标的按钮' _parent_ref="{{isMounted}}" onChildRef='saveChildRef3'>
-</i-panel><i-page current='{{ current }}' total='{{5}}' _parent_ref="{{isMounted}}" onChange='handleChange' onChildRef='saveChildRef4'>
+</i-page><i-panel title='带有文字和图标的按钮' ref='saveChildRef3'>
+</i-panel><i-page current='{{ current }}' total='{{5}}' onChange='handleChange' ref='saveChildRef4'>
   <view slot='prev'>
-    <i-icon is-inline='true' type='return' _parent_ref="{{isMounted}}" onChildRef='saveChildRef5'>
+    <i-icon is-inline='true' type='return' ref='saveChildRef5'>
     </i-icon>
     上一步
   </view>
   <view slot='next'>
-    下一步    <i-icon is-inline='true' type='enter' _parent_ref="{{isMounted}}" onChildRef='saveChildRef6'>
+    下一步    <i-icon is-inline='true' type='enter' ref='saveChildRef6'>
     </i-icon>
   </view>
-</i-page><i-panel title='隐藏数字' _parent_ref="{{isMounted}}" onChildRef='saveChildRef7'>
-</i-panel><i-page current='{{ current }}' total='{{5}}' simple=" " _parent_ref="{{isMounted}}" onChange='handleChange' onChildRef='saveChildRef8'>
+</i-page><i-panel title='隐藏数字' ref='saveChildRef7'>
+</i-panel><i-page current='{{ current }}' total='{{5}}' simple=" " onChange='handleChange' ref='saveChildRef8'>
   <view slot='prev'>
     Prev
   </view>
   <view slot='next'>
     Next
   </view>
-</i-page><i-panel title='只显示数字' _parent_ref="{{isMounted}}" onChildRef='saveChildRef9'>
-</i-panel><i-page current='{{ current }}' total='{{5}}' mode='number' _parent_ref="{{isMounted}}" onChange='handleChange' onChildRef='saveChildRef10'>
-</i-page><i-panel title='显示点' _parent_ref="{{isMounted}}" onChildRef='saveChildRef11'>
-</i-panel><i-page current='{{ current }}' total='{{5}}' mode='pointer' _parent_ref="{{isMounted}}" onChange='handleChange' onChildRef='saveChildRef12'>
+</i-page><i-panel title='只显示数字' ref='saveChildRef9'>
+</i-panel><i-page current='{{ current }}' total='{{5}}' mode='number' onChange='handleChange' ref='saveChildRef10'>
+</i-page><i-panel title='显示点' ref='saveChildRef11'>
+</i-panel><i-page current='{{ current }}' total='{{5}}' mode='pointer' onChange='handleChange' ref='saveChildRef12'>
 </i-page>
             </view>

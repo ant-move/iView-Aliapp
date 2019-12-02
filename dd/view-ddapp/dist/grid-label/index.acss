@@ -1,4 +1,4 @@
-.i-grid-label {
+.grid-label-index .i-grid-label {
     margin-top: 5px;
     display: block;
     text-align: center;

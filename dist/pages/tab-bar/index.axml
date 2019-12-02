@@ -1,0 +1,23 @@
+<view class='page-container-classname'>
+                <i-panel title='基本用法' onChildRef='saveChildRef1' _parent_ref="{{isMounted}}">
+</i-panel><i-tab-bar current='{{ current }}' _parent_ref="{{isMounted}}" onChange='handleChange' onChildRef='saveChildRef2'>
+  <i-tab-bar-item type='homepage' icon='homepage' current-icon='homepage_fill' title='Home' _parent_ref="{{isMounted}}" onChildRef='saveChildRef3'>
+  </i-tab-bar-item>
+  <i-tab-bar-item type='group' icon='group' current-icon='group_fill' title='Friends' _parent_ref="{{isMounted}}" onChildRef='saveChildRef4'>
+  </i-tab-bar-item>
+  <i-tab-bar-item type='remind' icon='remind' current-icon='remind_fill' count='{{3}}' title='Notice' _parent_ref="{{isMounted}}" onChildRef='saveChildRef5'>
+  </i-tab-bar-item>
+  <i-tab-bar-item type='mine' icon='mine' current-icon='mine_fill' dot=" " title='My' _parent_ref="{{isMounted}}" onChildRef='saveChildRef6'>
+  </i-tab-bar-item>
+</i-tab-bar><i-panel title='自定义主题色' _parent_ref="{{isMounted}}" onChildRef='saveChildRef7'>
+</i-panel><i-tab-bar current='{{ current }}' color='#f759ab' _parent_ref="{{isMounted}}" onChange='handleChange' onChildRef='saveChildRef8'>
+  <i-tab-bar-item type='homepage' icon='homepage' current-icon='homepage_fill' title='首页' _parent_ref="{{isMounted}}" onChildRef='saveChildRef9'>
+  </i-tab-bar-item>
+  <i-tab-bar-item type='group' icon='group' current-icon='group_fill' title='朋友' _parent_ref="{{isMounted}}" onChildRef='saveChildRef10'>
+  </i-tab-bar-item>
+  <i-tab-bar-item type='remind' icon='remind' current-icon='remind_fill' title='通知' _parent_ref="{{isMounted}}" onChildRef='saveChildRef11'>
+  </i-tab-bar-item>
+  <i-tab-bar-item type='mine' icon='mine' current-icon='mine_fill' title='我的' _parent_ref="{{isMounted}}" onChildRef='saveChildRef12'>
+  </i-tab-bar-item>
+</i-tab-bar>
+            </view>

@@ -1,55 +1,55 @@
 <view class='page-container-classname'>
-                <i-alert onChildRef='saveChildRef1' _parent_ref="{{isMounted}}">
+                <i-alert ref='saveChildRef1'>
   An info prompt
-</i-alert><i-alert type='success' _parent_ref="{{isMounted}}" onChildRef='saveChildRef2'>
+</i-alert><i-alert type='success' ref='saveChildRef2'>
   An success prompt
-</i-alert><i-alert type='warning' _parent_ref="{{isMounted}}" onChildRef='saveChildRef3'>
+</i-alert><i-alert type='warning' ref='saveChildRef3'>
   An warning prompt
-</i-alert><i-alert type='error' _parent_ref="{{isMounted}}" onChildRef='saveChildRef4'>
+</i-alert><i-alert type='error' ref='saveChildRef4'>
   An error prompt
-</i-alert><i-alert type='info' _parent_ref="{{isMounted}}" onChildRef='saveChildRef5'>
+</i-alert><i-alert type='info' ref='saveChildRef5'>
   An info prompt  <view slot='desc'>
     Content of prompt. Content of prompt.
   </view>
-</i-alert><i-alert type='success' _parent_ref="{{isMounted}}" onChildRef='saveChildRef6'>
+</i-alert><i-alert type='success' ref='saveChildRef6'>
   An success prompt  <view slot='desc'>
     Content of prompt. Content of prompt.
   </view>
-</i-alert><i-alert type='warning' _parent_ref="{{isMounted}}" onChildRef='saveChildRef7'>
+</i-alert><i-alert type='warning' ref='saveChildRef7'>
   An warning prompt  <view slot='desc'>
     Content of prompt. Content of prompt.
   </view>
-</i-alert><i-alert type='error' _parent_ref="{{isMounted}}" onChildRef='saveChildRef8'>
+</i-alert><i-alert type='error' ref='saveChildRef8'>
   An error prompt  <view slot='desc'>
     Content of prompt. Content of prompt.
   </view>
-</i-alert><i-alert type='info' show-icon=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef9'>
+</i-alert><i-alert type='info' show-icon=" " ref='saveChildRef9'>
   An info prompt
-</i-alert><i-alert type='success' show-icon=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef10'>
+</i-alert><i-alert type='success' show-icon=" " ref='saveChildRef10'>
   An success prompt
-</i-alert><i-alert type='warning' show-icon=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef11'>
+</i-alert><i-alert type='warning' show-icon=" " ref='saveChildRef11'>
   An warning prompt
-</i-alert><i-alert type='error' show-icon=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef12'>
+</i-alert><i-alert type='error' show-icon=" " ref='saveChildRef12'>
   An error prompt
-</i-alert><i-alert show-icon=" " desc=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef13'>
+</i-alert><i-alert show-icon=" " desc=" " ref='saveChildRef13'>
   An info prompt  <view slot='desc'>
     Content of prompt. Content of prompt.
   </view>
-</i-alert><i-alert type='success' show-icon=" " desc=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef14'>
+</i-alert><i-alert type='success' show-icon=" " desc=" " ref='saveChildRef14'>
   An success prompt  <view slot='desc'>
     Content of prompt. Content of prompt.
   </view>
-</i-alert><i-alert type='warning' show-icon=" " desc=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef15'>
+</i-alert><i-alert type='warning' show-icon=" " desc=" " ref='saveChildRef15'>
   An warning prompt  <view slot='desc'>
     Content of prompt. Content of prompt.
   </view>
-</i-alert><i-alert type='error' show-icon=" " desc=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef16'>
+</i-alert><i-alert type='error' show-icon=" " desc=" " ref='saveChildRef16'>
   An error prompt  <view slot='desc'>
     Content of prompt. Content of prompt.
   </view>
-</i-alert><i-alert closable=" " _parent_ref="{{isMounted}}" onClose='handleClick' onChildRef='saveChildRef17'>
+</i-alert><i-alert closable=" " onClose='handleClick' ref='saveChildRef17'>
   An info prompt
-</i-alert><i-alert type='success' show-icon=" " desc=" " closable=" " _parent_ref="{{isMounted}}" onClose='handleClick' onChildRef='saveChildRef18'>
+</i-alert><i-alert type='success' show-icon=" " desc=" " closable=" " onClose='handleClick' ref='saveChildRef18'>
   An success prompt  <view slot='desc'>
     Content of prompt. Content of prompt.
   </view>

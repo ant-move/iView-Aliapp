@@ -1,4 +1,4 @@
-<view class='badge-index {{className}}' onChildRef='saveChildRef0'>
+<view class='badge-index {{className}}' ref='saveChildRef0'>
   <view class='{{iClass}} i-badge'>
     <slot>
     </slot>

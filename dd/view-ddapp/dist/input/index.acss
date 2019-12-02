@@ -1,4 +1,4 @@
-.i-cell {
+.input-index .i-cell {
     position: relative;
     padding: 12px 15px;
     display: flex;
@@ -8,7 +8,8 @@
     font-size: 14px;
     overflow: hidden;
 }
-.i-cell::after {
+
+.input-index .i-cell::after {
     content: "";
     position: absolute;
     top: 0;
@@ -24,36 +25,45 @@
     left: 15px;
     right: 0;
 }
-.i-cell-last::after {
+
+.input-index .i-cell-last::after {
     display: none;
 }
-.i-cell-icon {
+
+.input-index .i-cell-icon {
     margin-right: 5px;
 }
-.i-cell-icon:empty {
+
+.input-index .i-cell-icon:empty {
     display: none;
 }
-.i-cell-bd {
+
+.input-index .i-cell-bd {
     flex: 1;
 }
-.i-cell-text {
+
+.input-index .i-cell-text {
     line-height: 24px;
     font-size: 14px;
 }
-.i-cell-desc {
+
+.input-index .i-cell-desc {
     line-height: 1.2;
     font-size: 12px;
     color: #80848f;
 }
-.i-cell-ft {
+
+.input-index .i-cell-ft {
     position: relative;
     text-align: right;
     color: #495060;
 }
-.i-cell-access .i-cell-ft {
+
+.input-index .i-cell-access .i-cell-ft {
     padding-right: 13px;
 }
-.i-cell-access .i-cell-ft::after {
+
+.input-index .i-cell-access .i-cell-ft::after {
     content: " ";
     display: inline-block;
     width: 6px;
@@ -66,28 +76,34 @@
     border-style: solid;
     transform: translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
 }
-.i-input {
+
+.input-index .i-input {
     padding: 7px 15px;
     color: #495060;
 }
-.i-input-wrapped {
+
+.input-index .i-input-wrapped {
     margin: 10px 15px;
     background-color: #fff;
 }
-.i-input-wrapped::after {
+
+.input-index .i-input-wrapped::after {
     left: 0;
     border-width: 1px;
     border-radius: 4px;
 }
-.i-input-error {
+
+.input-index .i-input-error {
     color: #ed3f14;
 }
-.i-input-title {
+
+.input-index .i-input-title {
     color: #495060;
     min-width: 65px;
     padding-right: 10px;
 }
-.i-input-input {
+
+.input-index .i-input-input {
     flex: 1;
     line-height: 1.6;
     padding: 4px 0;
@@ -95,15 +111,19 @@
     height: auto;
     font-size: 14px;
 }
-.i-input-placeholder {
+
+.input-index .i-input-placeholder {
     font-size: 14px;
 }
-.i-input-input-right {
+
+.input-index .i-input-input-right {
     text-align: right;
 }
-.i-input.i-input-wrapped::after {
+
+.input-index .i-input.i-input-wrapped::after {
     display: block;
 }
-.i-input-wrapped.i-input-error::after {
+
+.input-index .i-input-wrapped.i-input-error::after {
     border-color: #ed3f14;
 }

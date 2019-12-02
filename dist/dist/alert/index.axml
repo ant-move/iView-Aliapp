@@ -1,0 +1,24 @@
+<view class='alert-index {{className}}' onChildRef='saveChildRef0'>
+  <view class="{{iClass}} i-alert {{'i-alert-'+type}} {{showIcon?'i-alert-with-icon':''}} {{desc?'i-alert-with-desc':''}}" a:if='{{!closed}}'>
+    <view a:if='{{ showIcon }}' class='i-alert-icon'>
+      <i-icon type='prompt' a:if="{{ type === 'info' }}" size='{{desc?24:16}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef1'>
+      </i-icon>
+      <i-icon type='success' a:if="{{ type === 'success' }}" size='{{desc?24:16}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef2'>
+      </i-icon>
+      <i-icon type='warning' a:if="{{ type === 'warning' }}" size='{{desc?24:16}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef3'>
+      </i-icon>
+      <i-icon type='delete' a:if="{{ type === 'error' }}" size='{{desc?24:16}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef4'>
+      </i-icon>
+    </view>
+    <slot>
+    </slot>
+    <view class='i-alert-desc'>
+      <slot name='desc'>
+      </slot>
+    </view>
+    <view class='i-alert-close' a:if='{{ closable }}' onTap='handleTap'>
+      <i-icon type='close' _parent_ref="{{isMounted}}" onChildRef='saveChildRef5'>
+      </i-icon>
+    </view>
+  </view>
+</view>

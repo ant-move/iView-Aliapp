@@ -1,11 +1,11 @@
-<import-sjs onChildRef='saveChildRef0' from="./index.axmlparse.sjs" name='parse'>
+<import-sjs ref='saveChildRef0' from="./index.axmlparse.sjs" name='parse'>
 </import-sjs><view unscope-style=" " is-inline=" " class="{{iClass}} i-step-item {{parse.getClass(status,current,index)}} {{ direction === 'vertical' ? 'i-step-vertical' : 'i-step-horizontal' }}" style='{{parse.getItemStyle(len,direction)}}'>
   <view class='i-step-item-ico'>
     <view class='i-step-ico' a:if='{{parse.noIco(status,current,index,icon)  }}'>
       {{ index+1 }}
     </view>
     <view class='i-step-ico' a:else >
-      <i-icon i-class='i-step-ico-in' type='{{parse.getIcoClass(status,icon)}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef1'>
+      <i-icon i-class='i-step-ico-in' type='{{parse.getIcoClass(status,icon)}}' ref='saveChildRef1'>
       </i-icon>
     </view>
     <view class='i-step-line' a:if='{{ index !== len - 1 }}'>

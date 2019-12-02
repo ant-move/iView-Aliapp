@@ -2,12 +2,6 @@ const _Component = require("../../__antmove/component/componentClass.js")(
     "Component"
 );
 const _my = require("../../__antmove/api/index.js")(my);
-my.setStorageSync({
-    key: "activeComponent",
-    data: {
-        is: "dist/notice-bar/index"
-    }
-});
 const VALID_MODE = ["closeable"];
 const FONT_COLOR = "#f60";
 const BG_COLOR = "#fff7cc";

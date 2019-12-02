@@ -1,4 +1,4 @@
-.i-noticebar {
+.notice-bar-index .i-noticebar {
     display: flex;
     height: 72rpx;
     line-height: 72rpx;
@@ -7,20 +7,24 @@
     background-color: #fefcec;
     overflow: hidden;
 }
-.i-noticebar-icon {
+
+.notice-bar-index .i-noticebar-icon {
     display: flex;
     margin-left: 30rpx;
     align-items: center;
 }
-.i-noticebar-icon + view {
+
+.notice-bar-index .i-noticebar-icon + view {
     margin-left: 10rpx;
 }
-.i-noticebar-operation {
+
+.notice-bar-index .i-noticebar-operation {
     display: flex;
     margin-right: 16rpx;
     align-items: center;
 }
-.i-noticebar-content-wrap {
+
+.notice-bar-index .i-noticebar-content-wrap {
     position: relative;
     flex: 1;
     margin: 0 30rpx;
@@ -28,7 +32,8 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.i-noticebar-content-wrap .i-noticebar-content {
+
+.notice-bar-index .i-noticebar-content-wrap .i-noticebar-content {
     position: absolute;
     transition-duration: 20s;
 }

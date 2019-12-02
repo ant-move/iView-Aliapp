@@ -1,29 +1,29 @@
 <view class='page-container-classname'>
-                <view class='container' onChildRef='saveChildRef0'>
+                <view class='container' ref='saveChildRef0'>
   <view class='demo'>
-    <i-badge dot=" " _parent_ref="{{isMounted}}" onChildRef='saveChildRef1'>
+    <i-badge dot=" " ref='saveChildRef1'>
       <view class='demo-badge'>
       </view>
     </i-badge>
   </view>
   <view class='demo'>
-    <i-badge count='{{3}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef2'>
+    <i-badge count='{{3}}' ref='saveChildRef2'>
       <view class='demo-badge'>
       </view>
     </i-badge>
   </view>
   <view class='demo'>
-    <i-badge count='{{123}}' overflow-count='{{100}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef3'>
+    <i-badge count='{{123}}' overflow-count='{{100}}' ref='saveChildRef3'>
       <view class='demo-badge'>
       </view>
     </i-badge>
   </view>
   <view class='demo'>
-    <i-badge count='{{66}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef4'>
+    <i-badge count='{{66}}' ref='saveChildRef4'>
     </i-badge>
   </view>
   <view class='demo'>
-    <i-badge count='{{66}}' i-class-alone='demo-badge-alone' _parent_ref="{{isMounted}}" onChildRef='saveChildRef5'>
+    <i-badge count='{{66}}' i-class-alone='demo-badge-alone' ref='saveChildRef5'>
     </i-badge>
   </view>
 </view>

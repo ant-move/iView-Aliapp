@@ -1,4 +1,4 @@
-<view class='row-index {{className}}' onChildRef='saveChildRef0'>
+<view class='row-index {{className}}' ref='saveChildRef0'>
   <view class='{{iClass}} i-row'>
     <slot>
     </slot>

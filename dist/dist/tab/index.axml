@@ -1,0 +1,14 @@
+<view unscope-style=" " class="{{iClass}} i-tabs-tab {{ scroll ? 'i-tabs-tab-scroll' : '' }} {{ current ? 'i-tabs-tab-current' : '' }}" onChildRef='saveChildRef0'>
+  <i-badge dot='{{ dot }}' count='{{ dot ? 0 : count }}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef1'>
+    <view onTap='handleClickItem'>
+      <view class="i-tabs-tab-title {{ current ? 'i-tabs-tab-title-current' : '' }}" a:if='{{ current && currentColor }}' style='color: {{ currentColor }}'>
+        {{ title }}
+      </view>
+      <view class="i-tabs-tab-title {{ current ? 'i-tabs-tab-title-current' : '' }}" a:else >
+        {{ title }}
+      </view>
+    </view>
+  </i-badge>
+  <view class='i-tabs-tab-bar' a:if='{{ current }}' style='background: {{ currentColor }}'>
+  </view>
+</view>

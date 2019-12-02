@@ -1,4 +1,4 @@
-<view class='swipeout-index {{className}}' onChildRef='saveChildRef0'>
+<view class='swipeout-index {{className}}' ref='saveChildRef0'>
   <import-sjs from="./index.axmlparse.sjs" name='parse'>
   </import-sjs>
   <view class='i-swipeout-wrap {{iClass}}'>
@@ -9,7 +9,7 @@
       </view>
       <view class='i-swipeout-button-right-group' a:if='{{actions.length > 0}}' catchTouchEnd='loop'>
         <view class='i-swipeout-button-right-item' a:for='{{actions}}' style='{{parse.setStyle(item)}};width:{{item.width}}px;' a:key='{{index}}' data-index='{{index}}' ref-numbers='{{actions}}' onTap='handlerButton'>
-          <i-icon a:if='{{item.icon}}' type='{{item.icon}}' size='{{item.fontsize}}' color='{{item.color}}' _parent_ref="{{isMounted}}" onChildRef='saveChildRef1'>
+          <i-icon a:if='{{item.icon}}' type='{{item.icon}}' size='{{item.fontsize}}' color='{{item.color}}' ref='saveChildRef1'>
           </i-icon>
           {{item.name}}
         </view>

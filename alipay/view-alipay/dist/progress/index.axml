@@ -1,4 +1,4 @@
-<view class='progress-index {{className}}' onChildRef='saveChildRef0'>
+<view class='progress-index {{className}}' ref='saveChildRef0'>
   <view class="{{iClass}} i-progress i-progress-{{ status }} {{ !hideInfo ? 'i-progress-show-info' : '' }}">
     <view class='i-progress-outer'>
       <view class='i-progress-inner'>

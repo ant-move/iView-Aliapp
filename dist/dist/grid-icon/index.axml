@@ -1,0 +1,6 @@
+<view class='grid-icon-index {{className}}' onChildRef='saveChildRef0'>
+  <view class='{{iClass}} i-grid-icon'>
+    <slot>
+    </slot>
+  </view>
+</view>

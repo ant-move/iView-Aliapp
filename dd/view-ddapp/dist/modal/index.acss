@@ -1,4 +1,4 @@
-.i-modal {
+.modal-index .i-modal {
     position: fixed;
     overflow: auto;
     top: 0;
@@ -17,11 +17,13 @@
     opacity: 0;
     visibility: hidden;
 }
-.i-modal-show {
+
+.modal-index .i-modal-show {
     visibility: visible;
     opacity: 1;
 }
-.i-modal-mask {
+
+.modal-index .i-modal-mask {
     position: fixed;
     top: 0;
     left: 0;
@@ -33,15 +35,18 @@
     opacity: 0;
     visibility: hidden;
 }
-.i-modal-mask-show {
+
+.modal-index .i-modal-mask-show {
     opacity: 1;
     visibility: visible;
 }
-.i-modal-main {
+
+.modal-index .i-modal-main {
     width: 270px;
     position: relative;
 }
-.i-modal-content {
+
+.modal-index .i-modal-content {
     border-radius: 7px;
     padding-top: 15px;
     position: relative;
@@ -52,7 +57,8 @@
     height: 100%;
     overflow: hidden;
 }
-.i-modal-body {
+
+.modal-index .i-modal-body {
     max-height: 100px;
     margin-bottom: 15px;
     font-size: 14px;
@@ -61,7 +67,8 @@
     line-height: 1.5;
     overflow: auto;
 }
-.i-modal-title {
+
+.modal-index .i-modal-title {
     padding: 6px 15px 15px;
     margin: 0;
     font-size: 18px;
@@ -69,13 +76,16 @@
     color: #1c2438;
     text-align: center;
 }
-.i-modal-actions {
+
+.modal-index .i-modal-actions {
     margin: 0 1px;
 }
-.i-modal-action-vertical {
+
+.modal-index .i-modal-action-vertical {
     position: relative;
 }
-.i-modal-action-vertical:after {
+
+.modal-index .i-modal-action-vertical:after {
     content: "";
     position: absolute;
     top: 0;
@@ -89,22 +99,27 @@
     border: 0 solid #e9eaec;
     border-top-width: 1px;
 }
-.i-modal-grid {
+
+.modal-index .i-modal-grid {
     border-radius: 0 0 7px 7px;
     border-left: none;
 }
-.i-modal-grid-item,
-.i-modal-grid-item-last {
+
+.modal-index .i-modal-grid-item,
+.modal-index .i-modal-grid-item-last {
     padding: 0;
     border-bottom: none;
 }
-.i-modal-grid-item-last {
+
+.modal-index .i-modal-grid-item-last {
     border-right: none;
 }
-.i-modal-btn-ok {
+
+.modal-index .i-modal-btn-ok {
     color: #2d8cf0 !important;
 }
-.i-modal-btn-loading {
+
+.modal-index .i-modal-btn-loading {
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
@@ -117,18 +132,22 @@
     animation: btn-spin 0.6s linear;
     animation-iteration-count: infinite;
 }
-.i-modal-btn-text {
+
+.modal-index .i-modal-btn-text {
     display: inline-block;
     vertical-align: middle;
 }
-.i-modal-btn-icon {
+
+.modal-index .i-modal-btn-icon {
     font-size: 14px !important;
     margin-right: 4px;
 }
+
 @keyframes btn-spin {
     0% {
         transform: rotate(0);
     }
+
     100% {
         transform: rotate(360deg);
     }

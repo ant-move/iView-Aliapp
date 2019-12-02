@@ -1,13 +1,6 @@
 const _Component = require("../../__antmove/component/componentClass.js")(
     "Component"
 );
-my.setStorageSync({
-    key: "activeComponent",
-    data: {
-        is: "dist/input-number/index"
-    }
-});
-
 function addNum(num1, num2) {
     let sq1, sq2, m;
 

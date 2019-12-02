@@ -1,11 +1,4 @@
 const _Page = require("../../__antmove/component/componentClass.js")("Page");
-my.setStorageSync({
-    key: "activeComponent",
-    data: {
-        is: "pages/drawer/index"
-    }
-});
-
 _Page({
     data: {
         showLeft1: false,

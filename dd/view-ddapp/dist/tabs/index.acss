@@ -1,4 +1,4 @@
-.i-tabs {
+.tabs-index .i-tabs {
     display: flex;
     width: 100%;
     height: 42px;
@@ -10,7 +10,8 @@
     -webkit-box-align: center;
     background: #fff;
 }
-.i-tabs::after {
+
+.tabs-index .i-tabs::after {
     content: "";
     position: absolute;
     top: 0;
@@ -24,12 +25,14 @@
     border: 0 solid #e9eaec;
     border-bottom-width: 1px;
 }
-.i-tabs-scroll {
+
+.tabs-index .i-tabs-scroll {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
 }
-.i-tabs-fixed {
+
+.tabs-index .i-tabs-fixed {
     position: fixed;
     top: 0;
     z-index: 2;

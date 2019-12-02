@@ -1,4 +1,4 @@
-.i-toast {
+.toast-index .i-toast {
     position: fixed;
     top: 35%;
     left: 50%;
@@ -14,7 +14,8 @@
     border-radius: 4px;
     z-index: 1010;
 }
-.i-toast-mask {
+
+.toast-index .i-toast-mask {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -22,15 +23,18 @@
     right: 0;
     z-index: 1010;
 }
-.i-toast-icon {
+
+.toast-index .i-toast-icon {
     font-size: 38px !important;
     margin-bottom: 6px;
 }
-.i-toast-image {
+
+.toast-index .i-toast-image {
     max-width: 100px;
     max-height: 100px;
 }
-.i-toast-loading {
+
+.toast-index .i-toast-loading {
     display: inline-block;
     vertical-align: middle;
     width: 28px;
@@ -42,10 +46,12 @@
     animation: btn-spin 0.8s linear;
     animation-iteration-count: infinite;
 }
+
 @keyframes btn-spin {
     0% {
         transform: rotate(0);
     }
+
     100% {
         transform: rotate(360deg);
     }

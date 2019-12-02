@@ -1,0 +1,25 @@
+<view unscope-style=" " class="{{iClass}} i-cell {{ isLastCell ? 'i-cell-last' : '' }} {{ isLink ? 'i-cell-access' : '' }}" onChildRef='saveChildRef0' onTap='handleTap'>
+  <view class='i-cell-icon'>
+    <slot name='icon'>
+    </slot>
+  </view>
+  <view class='i-cell-bd'>
+    <view a:if='{{ title }}' class='i-cell-text'>
+      {{ title }}
+    </view>
+    <view a:if='{{ label }}' class='i-cell-desc'>
+      {{ label }}
+    </view>
+    <slot>
+    </slot>
+  </view>
+  <view class='i-cell-ft' catchTap='navigateTo'>
+    <block a:if='{{value}}'>
+      {{ value }}
+    </block>
+    <block a:else >
+      <slot name='footer'>
+      </slot>
+    </block>
+  </view>
+</view>
