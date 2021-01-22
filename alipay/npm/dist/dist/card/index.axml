@@ -1,0 +1,22 @@
+<view class='card-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class="{{iClass}} i-card {{ full ? 'i-card-full' : '' }}">
+    <view class='{{iClass}} i-card-header'>
+      <view class='i-card-header-content'>
+        <image class='i-card-header-thumb' src='{{ thumb }}' mode='aspectFit' a:if='{{ thumb }}'>
+        </image>
+        {{ title }}
+      </view>
+      <view class='i-card-header-extra' a:if='{{ extra }}'>
+        {{ extra }}
+      </view>
+    </view>
+    <view class='{{iClass}} i-card-body'>
+      <slot name='content'>
+      </slot>
+    </view>
+    <view class='{{iClass}} i-card-footer'>
+      <slot name='footer'>
+      </slot>
+    </view>
+  </view>
+</view>

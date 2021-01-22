@@ -1,0 +1,23 @@
+<view class='swipeout-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <import-sjs from="./index.axmlparse.sjs" name='parse'>
+  </import-sjs>
+  <view class='i-swipeout-wrap {{iClass}}'>
+    <view class='i-swipeout-item' style='{{parse.setPosition(position)}}' onTouchStart='antmoveAction' data-antmove-touchstart='handlerTouchstart' onTouchMove='antmoveAction' data-antmove-touchmove='handlerTouchmove' onTouchEnd='antmoveAction' data-antmove-touchend='handlerTouchend'>
+      <view class='i-swipeout-content'>
+        <slot name='content'>
+        </slot>
+      </view>
+      <view class='i-swipeout-button-right-group' a:if='{{actions.length > 0}}' catchTouchEnd='antmoveAction' data-antmove-touchend='loop'>
+        <view class='i-swipeout-button-right-item' a:for='{{actions}}' style='{{parse.setStyle(item)}};width:{{item.width}}px;' a:key='{{index}}' data-index='{{index}}' ref-numbers='{{actions}}' onTap='antmoveAction' data-antmove-tap='handlerButton'>
+          <i-icon a:if='{{item.icon}}' type='{{item.icon}}' size='{{item.fontsize}}' color='{{item.color}}' ref='saveChildRef1'>
+          </i-icon>
+          {{item.name}}
+        </view>
+      </view>
+      <view class='i-swipeout-button-right-group' a:if='{{actions.length === 0}}' style='width:{{operateWidth}}px;right:-{{operateWidth}}px;' catchTouchEnd='antmoveAction' data-antmove-touchend='loop' onTap='antmoveAction' data-antmove-tap='handlerParentButton'>
+        <slot name='button'>
+        </slot>
+      </view>
+    </view>
+  </view>
+</view>

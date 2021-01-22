@@ -1,0 +1,18 @@
+<view class='tab-bar-item-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class='{{iClass}} i-tab-bar-item'>
+    <i-badge dot='{{ dot }}' count='{{ dot ? 0 : count }}' ref='saveChildRef1'>
+      <view>
+        <i-icon a:if='{{ icon || currentIcon }}' i-class="i-tab-bar-item-icon {{ current ? 'item-index--i-tab-bar-item-icon-current' : '' }}" color="{{ current ? currentColor : '' }}" type='{{ current ? currentIcon : icon }}' size='22' ref='saveChildRef2'>
+        </i-icon>
+        <image a:else  class='i-tab-bar-item-img' src='{{ current ? currentImg : img }}'>
+        </image>
+        <view class="i-tab-bar-item-title {{ current ? 'i-tab-bar-item-title-current' : '' }}" a:if='{{ current && currentColor }}' style='color: {{ currentColor }}'>
+          {{ title }}
+        </view>
+        <view class="i-tab-bar-item-title {{ current ? 'i-tab-bar-item-title-current' : '' }}" a:else >
+          {{ title }}
+        </view>
+      </view>
+    </i-badge>
+  </view>
+</view>

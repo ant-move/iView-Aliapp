@@ -1,29 +1,26 @@
 {
-    "name": "iview-aliapp-dd",
-    "version": "1.0.3",
-    "description": "alipay app components",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "build": "antmove wx-alipay -i ./wx/view-weapp -o ./alipay/view-alipay --component2 true",
-      "build-dd": "antmove wx-alipay -i ./wx/view-weapp -o ./dd/view-ddapp --component2 false --platform dd",
-    "build-npm-alipay": "rm -rf dist && cp -R alipay/view-alipay dist && babel alipay/view-alipay -d dist && rm -rf dist/node_modules dist/.tea",
-    "build-npm-dd": "rm -rf dist && cp -R dd/view-ddapp dist && babel dd/view-ddapp -d dist && rm -rf dist/node_modules dist/.tea",
-    "pub": "npm run build && npm publish"
-    },
-    "publishConfig": {
-      "access": "public",
-      "registry": "https://registry.npmjs.org/"
-    },
-    "files": [
-      "dist"
-    ],
-    "devDependencies": {
-      "@babel/cli": "^7.0.0",
-      "@babel/core": "^7.5.5",
-      "@babel/preset-env": "^7.5.5"
-    },
-    "author": "amap-appx@service.autonavi.com",
-    "license": "GPL-3.0"
+  "name": "iview-aliapp",
+  "version": "1.1.0",
+  "description": "iview alipay mini app components",
+  "main": "index.js",
+  "scripts": {
+    "build": "antmove wx-alipay -i ./wx/vant-app -o ./alipay/npm/dist --component2 true --libraryName vant-aliapp",
+    "build-dd": "antmove wx-alipay -i ./wx/vant-app -o ./dd/vant-app --component2 false --platform dd",
+    "tnpm-es5": "babel alipay/tnpm --out-dir alipay/tnpm",
+    "npm-es5": "babel alipay/npm --out-dir alipay/npm"
+  },
+  "files": [
+    "alipay/npm/dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": "amap-appx@service.autonavi.com",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11"
   }
-  
+}

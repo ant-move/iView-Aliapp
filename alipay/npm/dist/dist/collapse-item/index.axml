@@ -1,0 +1,13 @@
+<view class='collapse-item-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view id='{{name}}' class='{{iClass}} i-collapse-item '>
+    <view class='i-collapse-item-title-wrap' onTap='antmoveAction' data-antmove-tap='trigger'>
+      <i-icon size='16' type='enter' i-class="{{ showContent ? 'i-collapse-item-arrow-show' : 'i-collapse-item-arrow' }}" ref='saveChildRef1'>
+      </i-icon>
+      <text class='i-collapse-item-title {{iClassTitle}}'>
+        {{title}}      </text>
+    </view>    <view class='i-collapse-item-content {{showContent}} {{iClassContent}}'>
+      <slot name='content'>
+      </slot>
+    </view>
+  </view>
+</view>

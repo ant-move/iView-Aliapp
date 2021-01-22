@@ -1,0 +1,4 @@
+.slide-index {
+    display: block;
+    height: initial;
+}

@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"i-collapse": "iview-aliapp/dist/dist/collapse/index",
+		"i-collapse-item": "iview-aliapp/dist/dist/collapse-item/index"
+	},
+	"defaultTitle": "折叠面板"
+}

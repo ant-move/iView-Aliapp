@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+		"i-icon": "iview-aliapp/dist/dist/icon/index",
+		"i-grid": "iview-aliapp/dist/dist/grid/index",
+		"i-grid-item": "iview-aliapp/dist/dist/grid-item/index"
+	},
+	"defaultTitle": "Icon 图标"
+}

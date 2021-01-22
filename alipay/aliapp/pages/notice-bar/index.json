@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"i-panel": "iview-aliapp/dist/dist/panel/index",
+		"i-notice-bar": "iview-aliapp/dist/dist/notice-bar/index"
+	},
+	"defaultTitle": "NoticeBar 通告栏"
+}

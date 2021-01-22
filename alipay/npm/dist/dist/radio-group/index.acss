@@ -1,0 +1,4 @@
+.radio-group-index {
+    display: block;
+    height: initial;
+}

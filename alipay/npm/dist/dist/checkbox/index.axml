@@ -1,0 +1,13 @@
+<view class='checkbox-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class='{{iClass}} i-checkbox' catchTap='antmoveAction' data-antmove-tap='checkboxChange'>
+    <i-cell i-class='i-checkbox-cell' ref='saveChildRef1'>
+      <radio id='iview-checkbox-{{value}}' value='{{value}}' checked='{{checked}}' color="{{checked?color:''}}" disabled='{{disabled}}' class='i-checkbox-radio {{positionCls}}'>
+      </radio>
+      <custom-label for='iview-checkbox-{{value}}'>
+        <view class='i-checkbox-title'>
+          {{value}}
+        </view>
+      </custom-label>
+    </i-cell>
+  </view>
+</view>

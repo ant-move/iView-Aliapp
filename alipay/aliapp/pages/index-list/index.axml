@@ -1,0 +1,9 @@
+<view class='i-index-demo' ref='saveChildRef0'>
+  <i-index height='100%' onChange='onChange' ref='saveChildRef1'>
+    <i-index-item a:for='{{ cities }}' a:for-index='_index' a:key='{{*this}}' a:for-item='_item' name='{{_item.key}}' ref-numbers='{{ cities }}' ref='saveChildRef2'>
+      <view class='i-index-demo-item' a:for='{{item.list}}' a:key='{{index}}' ref-numbers='{{item.list}}'>
+        {{item.name}}
+      </view>
+    </i-index-item>
+  </i-index>
+</view>

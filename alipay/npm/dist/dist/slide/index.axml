@@ -1,0 +1,5 @@
+<view class='slide-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class='{{iClass}} i-slide' capture-catch:touchstart='handleTap2' capture-catch:touchmove='handleTap3'>
+    1111
+  </view>
+</view>

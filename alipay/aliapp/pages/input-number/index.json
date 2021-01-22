@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"i-input-number": "iview-aliapp/dist/dist/input-number/index",
+		"i-panel": "iview-aliapp/dist/dist/panel/index"
+	},
+	"defaultTitle": "InputNumber 数字输入框"
+}

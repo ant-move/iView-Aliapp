@@ -1,0 +1,11 @@
+<view class='input-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class="{{iClass}} i-cell i-input {{ error ? 'i-input-error' : '' }} {{ mode === 'wrapped' ? 'i-input-wrapped' : '' }}">
+    <view a:if='{{ title }}' class='i-cell-hd i-input-title'>
+      {{ title }}
+    </view>
+    <textarea a:if="{{ type === 'textarea' }}" auto-height=" " disabled='{{ disabled }}' focus='{{ autofocus }}' value='{{ value }}' placeholder='{{ placeholder }}' maxlength='{{ maxlength }}' class="i-input-input i-cell-bd {{ right ? 'i-input-input-right' : '' }}" placeholder-class='i-input-placeholder' show-count='{{false}}' onFocus='handleInputFocus' onBlur='handleInputBlur' onInput='handleInputChange'>
+    </textarea>
+    <custom-input a:else  type='{{ type }}' disabled='{{ disabled }}' focus='{{ autofocus }}' value='{{ value }}' placeholder='{{ placeholder }}' maxlength='{{ maxlength }}' class="i-input-input i-cell-bd {{ right ? 'i-input-input-right' : '' }}" placeholder-class='i-input-placeholder' onInput='handleInputChange' onFocus='handleInputFocus' onBlur='handleInputBlur'>
+    </custom-input>
+  </view>
+</view>

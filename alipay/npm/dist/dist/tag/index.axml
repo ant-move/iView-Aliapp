@@ -1,0 +1,8 @@
+<view class='tag-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <import-sjs from="./index.axmlparse.sjs" name='parse'>
+  </import-sjs>
+  <view class="{{iClass}} i-tag {{ parse.getClass(color,type,checked,checkable) }} {{checkable ? '' : 'i-tag-disable'}}" onTap='antmoveAction' data-antmove-tap='tapTag'>
+    <slot>
+    </slot>
+  </view>
+</view>

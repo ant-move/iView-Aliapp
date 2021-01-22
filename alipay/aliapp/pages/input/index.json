@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+		"i-input": "iview-aliapp/dist/dist/input/index",
+		"i-button": "iview-aliapp/dist/dist/button/index",
+		"i-panel": "iview-aliapp/dist/dist/panel/index"
+	},
+	"defaultTitle": "Input 输入框"
+}

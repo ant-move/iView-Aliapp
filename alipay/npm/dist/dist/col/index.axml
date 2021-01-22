@@ -1,0 +1,6 @@
+<view class='col-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class="{{iClass}} i-col {{ span ? 'i-col-span-' + span : '' }} {{ offset ? 'i-col-offset-' + offset : '' }}">
+    <slot>
+    </slot>
+  </view>
+</view>

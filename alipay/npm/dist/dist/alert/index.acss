@@ -1,0 +1,74 @@
+.alert-index {
+    display: block;
+    height: initial;
+}
+.alert-index .i-alert {
+    position: relative;
+    margin: 10px;
+    padding: 8px 48px 8px 16px;
+    font-size: 14px;
+    border-radius: 2px;
+    color: #fff;
+    background: #f7f7f7;
+    color: #495060;
+}
+
+.alert-index .i-alert.i-alert-with-icon {
+    padding: 8px 48px 8px 38px;
+}
+
+.alert-index .i-alert-info {
+    color: #fff;
+    background: #2db7f5;
+}
+
+.alert-index .i-alert-success {
+    color: #fff;
+    background: #19be6b;
+}
+
+.alert-index .i-alert-warning {
+    color: #fff;
+    background: #f90;
+}
+
+.alert-index .i-alert-error {
+    color: #fff;
+    background: #ed3f14;
+}
+
+.alert-index .i-alert-icon {
+    position: absolute;
+    top: 9px;
+    left: 16px;
+    font-size: 14px;
+}
+
+.alert-index .i-alert-desc {
+    font-size: 12px;
+}
+
+.alert-index .i-alert-with-desc {
+    padding: 16px;
+    position: relative;
+}
+
+.alert-index .i-alert-with-desc.i-alert-with-icon {
+    padding: 16px 16px 16px 69px;
+}
+
+.alert-index .i-alert-with-desc .i-alert-icon {
+    top: 50%;
+    left: 24px;
+    margin-top: -21px;
+    font-size: 28px;
+}
+
+.alert-index .i-alert-close {
+    font-size: 12px;
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}

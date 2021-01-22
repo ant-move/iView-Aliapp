@@ -7,7 +7,6 @@
 
 ## 文档
 
-* [iView Aliapp 文档](https://ant-move.github.io/iview-alipay-docs/)
 * [iView weapp 文档](https://weapp.iviewui.com)
 
 ## npm
@@ -23,12 +22,13 @@
 在开始使用 iView alipay 之前，你需要先阅读 [支付宝小程序自定义组件](https://docs.alipay.com/mini/framework/custom-component-overview) 的相关文档。
 
 ### 如何使用
-下载 iView 的代码，将 `dist` 目录拷贝到自己的项目中。然后按照如下的方式使用组件，以 Button 为例，其它组件在对应的文档页查看：
 
-1. 添加需要的组件。在页面的 json 中配置（路径根据自己项目位置配置）：
+`npm i iview-aliapp -S`
+
+1. 添加需要的组件, 以Button为例。在页面的 json 中配置（路径根据自己项目位置配置）：
 ```json
 "usingComponents": {
-    "i-button": "../../dist/button/index"
+    "i-button": "iview-aliapp/dist/dist/button/index"
 }
 ```
 2. 在 axml 中使用组件：
@@ -40,7 +40,7 @@
 
 * 支付宝小程序
 
-<img width='150px' src='https://cache.amap.com/ecology/tool/antmove/web/assets/iView-Aliapp.jpg'/>
+<img width='150px' src='https://img.alicdn.com/imgextra/i3/O1CN01uwbP3S29HkDMc7c4N_!!6000000008043-2-tps-302-300.png'/>
 
 * gif 效果图
 
@@ -48,7 +48,7 @@
 
 ### IDE 预览
 
-下载本项目到本地，使用支付宝 IDE 打开 iview-alipay 即可预览。
+下载本项目到本地，使用支付宝 IDE 打开 alipay/aliapp, 运行`npm i` 安装依赖，即可预览。
 
 > 预览时请在项目详情设置中开启 `component2` 编译，详情可参考[支付宝小程序自定义组件使用介绍](https://docs.alipay.com/mini/framework/custom-component-overview#%E4%BD%BF%E7%94%A8%E9%A1%BB%E7%9F%A5)。
 
@@ -56,7 +56,7 @@
 
 如果您在使用的过程中碰到问题，可以通过下面几个途径寻求帮助。
 
-* 钉钉微信交流群： <img width='200px' src='https://ant-move.github.io/website/img/contact-dingding.jpg'/> <img width='200px' src='https://cache.amap.com/ecology/tool/antmove/web/assets/wx-qrcode.JPG'/>
+* 钉钉交流群： <img width='200px' src='https://camo.githubusercontent.com/1ac9a77e46126bc321740475803f3b49ffe7f83e1cfdd75683de399a6065272b/68747470733a2f2f63616368652e616d61702e636f6d2f65636f6c6f67792f746f6f6c2f616e746d6f76652f7765622f6173736574732f636f6e746163742d64696e6764696e672e6a7067'/>
 * 邮件：amap-appx@service.autonavi.com
 
 ## License

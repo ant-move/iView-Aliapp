@@ -1,0 +1,9 @@
+{
+	"usingComponents": {
+		"i-panel": "iview-aliapp/dist/dist/panel/index",
+		"i-button": "iview-aliapp/dist/dist/button/index",
+		"i-checkbox-group": "iview-aliapp/dist/dist/checkbox-group/index",
+		"i-checkbox": "iview-aliapp/dist/dist/checkbox/index"
+	},
+	"defaultTitle": "Checkbox 复选"
+}

@@ -1,0 +1,6 @@
+<view class='collapse-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class='{{iClass}} i-collapse' onCollapse='clickfn'>
+    <slot>
+    </slot>
+  </view>
+</view>

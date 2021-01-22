@@ -1,0 +1,4 @@
+.collapse-index {
+    display: block;
+    height: initial;
+}

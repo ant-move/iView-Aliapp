@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+		"i-modal": "iview-aliapp/dist/dist/modal/index",
+		"i-button": "iview-aliapp/dist/dist/button/index",
+		"i-message": "iview-aliapp/dist/dist/message/index"
+	},
+	"defaultTitle": "Modal 对话框"
+}

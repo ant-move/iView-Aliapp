@@ -1,0 +1,101 @@
+.tag-index {
+    display: inline-block;
+    height: initial;
+}
+.tag-index .i-tag {
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 4px;
+    border-radius: 2px;
+    background: #fff;
+    font-size: 11px;
+    vertical-align: middle;
+    border: 1rpx solid #dddee1;
+}
+
+.tag-index .i-tag-none {
+    border-color: #fff;
+}
+
+.tag-index .i-tag-default {
+    border-color: #dddee1;
+    background: #e9eaec;
+}
+
+.tag-index .i-tag-red {
+    background: #ed3f14;
+    color: #fff;
+}
+
+.tag-index .i-tag-red-border {
+    color: #ed3f14;
+    background: #fff;
+    border-color: #ed3f14;
+}
+
+.tag-index .i-tag-red-checked {
+    background: #ed3f14;
+    color: #fff;
+    border-color: #ed3f14;
+}
+
+.tag-index .i-tag-green {
+    background: #19be6b;
+    color: #fff;
+    border-color: #19be6b;
+}
+
+.tag-index .i-tag-green-border {
+    color: #19be6b;
+    background: #fff;
+    border-color: #19be6b;
+}
+
+.tag-index .i-tag-green-checked {
+    background: #19be6b;
+    color: #fff;
+    border-color: #19be6b;
+}
+
+.tag-index .i-tag-blue {
+    background: #2d8cf0;
+    color: #fff;
+    border-color: #2d8cf0;
+}
+
+.tag-index .i-tag-blue-border {
+    color: #2d8cf0;
+    background: #fff;
+    border-color: #2d8cf0;
+}
+
+.tag-index .i-tag-blue-checked {
+    background: #2d8cf0;
+    color: #fff;
+    border-color: #2d8cf0;
+}
+
+.tag-index .i-tag-yellow {
+    background: #f90;
+    color: #fff;
+    border-color: #f90;
+}
+
+.tag-index .i-tag-yellow-border {
+    color: #f90;
+    background: #fff;
+    border-color: #f90;
+}
+
+.tag-index .i-tag-yellow-checked {
+    background: #f90;
+    color: #fff;
+    border-color: #f90;
+}
+
+.tag-index .i-tag-default-checked {
+    background: #e9eaec;
+    color: #495060;
+    border-color: #e9eaec;
+}

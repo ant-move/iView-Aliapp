@@ -1,0 +1,10 @@
+<view class='drawer-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class="{{iClass}} i-drawer {{ visible ? 'i-drawer-show' : '' }} {{ 'i-drawer-' + mode }}">
+    <view a:if='{{ mask }}' class='i-drawer-mask' onTap='antmoveAction' data-antmove-tap='handleMaskClick'>
+    </view>
+    <view class='i-drawer-container'>
+      <slot>
+      </slot>
+    </view>
+  </view>
+</view>

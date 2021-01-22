@@ -1,0 +1,13 @@
+<view class='radio-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class='{{iClass}} i-radio' catchTap='antmoveAction' data-antmove-tap='radioChange'>
+    <i-cell i-class='i-radio-cell' ref='saveChildRef1'>
+      <radio id='iview-radio-{{value}}' value='{{value}}' checked='{{checked}}' color="{{checked?color:''}}" disabled='{{disabled}}' class='i-radio-radio {{positionCls}}'>
+      </radio>
+      <custom-label for='iview-radio-{{value}}'>
+        <view class='i-radio-title'>
+          {{value}}
+        </view>
+      </custom-label>
+    </i-cell>
+  </view>
+</view>

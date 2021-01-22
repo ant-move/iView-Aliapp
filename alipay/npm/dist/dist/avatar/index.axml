@@ -1,0 +1,10 @@
+<view class='avatar-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class="{{iClass}} i-avatar i-avatar-{{ shape }} i-avatar-{{ size }} {{ src ? 'i-avatar-image' : '' }}">
+    <image src='{{ src }}' a:if="{{ src !== '' }}">
+    </image>
+    <view class='i-avatar-string' a:else >
+      <slot>
+      </slot>
+    </view>
+  </view>
+</view>

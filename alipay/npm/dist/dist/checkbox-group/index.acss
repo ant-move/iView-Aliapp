@@ -1,0 +1,4 @@
+.checkbox-group-index {
+    display: block;
+    height: initial;
+}

@@ -1,0 +1,7 @@
+{
+	"component": true,
+	"usingComponents": {
+		"i-cell": "../cell/index",
+		"custom-label": "../../__antmove/component/custom-label/custom-label"
+	}
+}

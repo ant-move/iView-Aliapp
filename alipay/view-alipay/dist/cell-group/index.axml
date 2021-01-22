@@ -1,6 +1,0 @@
-<view class='cell-group-index {{className}}' ref='saveChildRef0'>
-  <view class='{{iClass}} i-cell-group'>
-    <slot>
-    </slot>
-  </view>
-</view>

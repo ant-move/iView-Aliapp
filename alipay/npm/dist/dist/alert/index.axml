@@ -1,0 +1,24 @@
+<view class='alert-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class="{{iClass}} i-alert {{'i-alert-'+type}} {{showIcon?'i-alert-with-icon':''}} {{desc?'i-alert-with-desc':''}}" a:if='{{!closed}}'>
+    <view a:if='{{ showIcon }}' class='i-alert-icon'>
+      <i-icon type='prompt' a:if="{{ type === 'info' }}" size='{{desc?24:16}}' ref='saveChildRef1'>
+      </i-icon>
+      <i-icon type='success' a:if="{{ type === 'success' }}" size='{{desc?24:16}}' ref='saveChildRef2'>
+      </i-icon>
+      <i-icon type='warning' a:if="{{ type === 'warning' }}" size='{{desc?24:16}}' ref='saveChildRef3'>
+      </i-icon>
+      <i-icon type='delete' a:if="{{ type === 'error' }}" size='{{desc?24:16}}' ref='saveChildRef4'>
+      </i-icon>
+    </view>
+    <slot>
+    </slot>
+    <view class='i-alert-desc'>
+      <slot name='desc'>
+      </slot>
+    </view>
+    <view class='i-alert-close' a:if='{{ closable }}' onTap='antmoveAction' data-antmove-tap='handleTap'>
+      <i-icon type='close' ref='saveChildRef5'>
+      </i-icon>
+    </view>
+  </view>
+</view>

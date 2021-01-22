@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+		"i-tabs": "iview-aliapp/dist/dist/tabs/index",
+		"i-tab": "iview-aliapp/dist/dist/tab/index",
+		"i-panel": "iview-aliapp/dist/dist/panel/index"
+	},
+	"defaultTitle": "Tabs 标签页"
+}

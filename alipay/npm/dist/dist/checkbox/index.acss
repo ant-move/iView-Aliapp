@@ -1,0 +1,24 @@
+.checkbox-index {
+    display: block;
+    height: initial;
+}
+.checkbox-index .i-checkbox-cell::after {
+    display: block;
+}
+
+.checkbox-index .i-checkbox-checkbox-left {
+    float: left;
+}
+
+.checkbox-index .i-checkbox-checkbox-right {
+    float: right;
+}
+
+.checkbox-index .i-checkbox-radio {
+    vertical-align: middle;
+}
+
+.checkbox-index .i-checkbox-title {
+    display: inline-block;
+    vertical-align: middle;
+}

@@ -1,0 +1,26 @@
+<view class='page-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class='{{iClass}} i-page'>
+    <view class='i-page-prev' a:if="{{ mode === 'button' }}">
+      <i-button i-class='i-page-button' type='ghost' disabled='{{ current === 1 }}' onClick='handlePrev' ref='saveChildRef1'>
+        <slot name='prev'>
+        </slot>
+      </i-button>
+    </view>
+    <view class='i-page-number' a:if="{{ mode !== 'pointer' && !simple }}">
+      <view class='i-page-number-current'>
+        {{ current }}
+      </view>
+      /{{total}}
+    </view>
+    <view class='i-page-pointer' a:if="{{ mode === 'pointer' }}">
+      <view class="i-page-pointer-dot {{ (index + 1) === current ? 'current' : '' }}" a:for='{{ total }}' a:key='{{index}}' ref-numbers='{{ total }}'>
+      </view>
+    </view>
+    <view class='i-page-next' a:if="{{ mode === 'button' }}">
+      <i-button i-class='i-page-button' type='ghost' disabled='{{ current === total }}' onClick='handleNext' ref='saveChildRef2'>
+        <slot name='next'>
+        </slot>
+      </i-button>
+    </view>
+  </view>
+</view>

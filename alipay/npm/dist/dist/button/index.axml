@@ -1,0 +1,6 @@
+<btn antmoveClass="{{ inline ? 'i-btn-inline' : '' }}" unscope-style=" " class="{{iClass}} i-btn {{ long ? 'i-btn-long' : '' }} {{ 'i-btn-' + size }} {{ 'i-btn-' + type }} {{ 'i-btn-' + shape }} {{ loading ? 'i-btn-loading' : '' }} {{ disabled ? 'i-btn-disabled' : ''}} {{ inline ? 'i-btn-inline' : '' }}" hover-class='i-btn-hover' open-type='{{ openType }}' app-parameter='{{ appParameter }}' hover-stop-propagation='{{ hoverStopPropagation }}' hover-start-time='{{ hoverStartTime }}' hover-stay-time='{{ hoverStayTime }}' plain='true' ref='saveChildRef0' onGetUserInfo='bindgetuserinfo' onGetPhoneNumber='bindgetphonenumber' onTap='antmoveAction' data-antmove-tap='handleTap'>
+  <view class='i-btn-loading-inner' a:if='{{loading}}'>
+  </view>
+  <slot>
+  </slot>
+</btn>

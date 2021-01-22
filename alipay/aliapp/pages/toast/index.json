@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"i-toast": "iview-aliapp/dist/dist/toast/index",
+		"i-button": "iview-aliapp/dist/dist/button/index"
+	},
+	"defaultTitle": "Toast 轻提示"
+}

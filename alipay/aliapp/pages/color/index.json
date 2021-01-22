@@ -1,0 +1,9 @@
+{
+	"usingComponents": {
+		"i-card": "iview-aliapp/dist/dist/card/index",
+		"i-row": "iview-aliapp/dist/dist/row/index",
+		"i-col": "iview-aliapp/dist/dist/col/index",
+		"i-panel": "iview-aliapp/dist/dist/panel/index"
+	},
+	"defaultTitle": "Color 色彩"
+}

@@ -1,0 +1,18 @@
+<view class='index-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <import-sjs from="./index.axmlparse.sjs" name='parse'>
+  </import-sjs>
+  <view class='i-index {{iClass}}'>
+    <scroll-view scroll-y=" " style='{{parse.setScrollStyle(height)}};{{parse.setScrollMaxHeight(maxHeight) }}' scroll-top='{{scrollTop}}' onScroll='handlerScroll'>
+      <slot>
+      </slot>
+      <view class='i-index-fixed' catchTouchStart='antmoveAction' data-antmove-touchstart='handlerTouchMove' catchTouchMove='antmoveAction' data-antmove-touchmove='handlerTouchMove' catchTouchEnd='antmoveAction' data-antmove-touchend='handlerTouchEnd'>
+        <view class='i-index-fixed-item' a:for='{{fixedData}}' a:key='{{index}}' data-index='{{index}}' ref-numbers='{{fixedData}}' catchTap='antmoveAction' data-antmove-tap='handlerFixedTap'>
+          {{item}}
+        </view>
+      </view>
+      <view class='i-index-tooltip' style="{{ isTouches ? 'display:block' : 'display:none' }}">
+        {{currentName}}
+      </view>
+    </scroll-view>
+  </view>
+</view>

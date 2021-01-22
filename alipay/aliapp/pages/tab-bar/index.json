@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+		"i-tab-bar": "iview-aliapp/dist/dist/tab-bar/index",
+		"i-tab-bar-item": "iview-aliapp/dist/dist/tab-bar-item/index",
+		"i-panel": "iview-aliapp/dist/dist/panel/index"
+	},
+	"defaultTitle": "TabBar 标签栏"
+}

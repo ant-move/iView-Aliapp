@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+		"i-steps": "iview-aliapp/dist/dist/steps/index",
+		"i-step": "iview-aliapp/dist/dist/step/index",
+		"i-button": "iview-aliapp/dist/dist/button/index"
+	},
+	"defaultTitle": "Steps 步骤条"
+}

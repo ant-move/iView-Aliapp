@@ -1,0 +1,6 @@
+<view class='row-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class='{{iClass}} i-row'>
+    <slot>
+    </slot>
+  </view>
+</view>

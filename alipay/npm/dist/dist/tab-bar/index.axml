@@ -1,0 +1,10 @@
+<view class='tab-bar-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class="{{iClass}} i-tab-bar {{ fixed ? 'i-tab-bar-fixed' : '' }}">
+    <slot>
+    </slot>
+    <view class='i-tab-bar-list'>
+      <view class='i-tab-bar-layer' a:for='{{ list }}' a:key='{{ item.ikey }}' data-ikey='{{ item.ikey }}' style='width: {{ 100 / list.length }}%' ref-numbers='{{ list }}' onTap='antmoveAction' data-antmove-tap='handleClickItem'>
+      </view>
+    </view>
+  </view>
+</view>

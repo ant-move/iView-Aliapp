@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+		"i-action-sheet": "iview-aliapp/dist/dist/action-sheet/index",
+		"i-button": "iview-aliapp/dist/dist/button/index",
+		"i-message": "iview-aliapp/dist/dist/message/index"
+	},
+	"defaultTitle": "ActionSheet 动作面板"
+}

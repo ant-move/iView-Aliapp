@@ -1,0 +1,13 @@
+{
+	"usingComponents": {
+		"i-spin": "iview-aliapp/dist/dist/spin/index",
+		"i-panel": "iview-aliapp/dist/dist/panel/index",
+		"i-row": "iview-aliapp/dist/dist/row/index",
+		"i-col": "iview-aliapp/dist/dist/col/index",
+		"i-grid": "iview-aliapp/dist/dist/grid/index",
+		"i-grid-item": "iview-aliapp/dist/dist/grid-item/index",
+		"i-icon": "iview-aliapp/dist/dist/icon/index",
+		"i-switch": "iview-aliapp/dist/dist/switch/index"
+	},
+	"defaultTitle": "Spin 加载中"
+}

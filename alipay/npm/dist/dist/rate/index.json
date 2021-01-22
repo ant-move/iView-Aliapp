@@ -1,0 +1,7 @@
+{
+	"component": true,
+	"usingComponents": {
+		"i-icon": "../icon/index",
+		"custom-input": "../../__antmove/component/custom-input/custom-input"
+	}
+}

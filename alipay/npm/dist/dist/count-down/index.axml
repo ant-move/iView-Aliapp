@@ -1,0 +1,4 @@
+<view class='count-down-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <text class='{{countdownClass}}'>
+    {{time}}  </text>
+</view>

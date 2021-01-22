@@ -1,0 +1,34 @@
+.collapse-item-index {
+    display: block;
+    height: initial;
+}
+.collapse-item-index .i-collapse-item {
+    padding: 2px 8px;
+    border-top: 1px solid #dddee1;
+}
+
+.collapse-item-index .i-collapse-item-title {
+    vertical-align: middle;
+}
+
+.collapse-item-index .i-collapse-item-title-wrap {
+    padding: 2px 0 0;
+}
+
+.collapse-item-index .i-collapse-item-content {
+    padding: 6px;
+    display: none;
+}
+
+.collapse-item-index .i-collapse-item-show-content {
+    display: block;
+}
+
+.collapse-item-index .i-collapse-item-arrow {
+    transition: transform 0.2s ease-in-out;
+}
+
+.collapse-item-index .i-collapse-item-arrow-show {
+    transition: transform 0.2s ease-in-out;
+    transform: rotate(90deg);
+}

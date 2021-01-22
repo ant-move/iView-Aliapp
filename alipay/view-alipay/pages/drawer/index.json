@@ -1,7 +1,0 @@
-{
-	"usingComponents": {
-		"i-drawer": "../../dist/drawer/index",
-		"i-button": "../../dist/button/index"
-	},
-	"defaultTitle": "Drawer 抽屉"
-}

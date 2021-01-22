@@ -1,0 +1,16 @@
+<view class='tab-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class="{{iClass}} i-tabs-tab {{ scroll ? 'i-tabs-tab-scroll' : '' }} {{ current ? 'i-tabs-tab-current' : '' }}">
+    <i-badge dot='{{ dot }}' count='{{ dot ? 0 : count }}' ref='saveChildRef1'>
+      <view onTap='antmoveAction' data-antmove-tap='handleClickItem'>
+        <view class="i-tabs-tab-title {{ current ? 'i-tabs-tab-title-current' : '' }}" a:if='{{ current && currentColor }}' style='color: {{ currentColor }}'>
+          {{ title }}
+        </view>
+        <view class="i-tabs-tab-title {{ current ? 'i-tabs-tab-title-current' : '' }}" a:else >
+          {{ title }}
+        </view>
+      </view>
+    </i-badge>
+    <view class="i-tabs-tab-bar {{scroll ? 'i-tabs-tab-bar-bottom' : ''}}" a:if='{{ current }}' style='background: {{ currentColor }}'>
+    </view>
+  </view>
+</view>

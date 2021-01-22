@@ -1,0 +1,15 @@
+<view class='divider-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <import-sjs from="./index.axmlparse.sjs" name='parse'>
+  </import-sjs>
+  <view class='i-divider {{iClass}}' style='{{parse.getStyle(color,size,height)}}'>
+    <view class='i-divider-content' a:if="{{content !== ''}}">
+      {{content}}
+    </view>
+    <view class='i-divider-content' a:else >
+      <slot>
+      </slot>
+    </view>
+    <view class='i-divider-line' style='background:{{lineColor}}'>
+    </view>
+  </view>
+</view>

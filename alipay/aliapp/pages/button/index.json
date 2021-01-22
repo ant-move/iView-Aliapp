@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"i-button": "iview-aliapp/dist/dist/button/index",
+		"i-panel": "iview-aliapp/dist/dist/panel/index"
+	},
+	"defaultTitle": "Button 按钮"
+}

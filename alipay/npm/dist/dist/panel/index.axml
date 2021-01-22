@@ -1,0 +1,11 @@
+<view class='panel-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class='{{iClass}} i-panel'>
+    <view a:if='{{ title }}' class="i-panel-title {{ hideTop ? 'i-panel-title-hide-top' : '' }}">
+      {{ title }}
+    </view>
+    <view class="i-panel-content {{ hideBorder ? 'i-panel-without-border' : '' }}">
+      <slot>
+      </slot>
+    </view>
+  </view>
+</view>

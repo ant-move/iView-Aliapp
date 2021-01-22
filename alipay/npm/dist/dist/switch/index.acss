@@ -1,0 +1,94 @@
+.switch-index {
+    display: block;
+    height: initial;
+}
+.switch-index .i-switch {
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 24px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    position: relative;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.switch-index .i-switch-hide-input {
+    display: none;
+    opacity: 0;
+}
+
+.switch-index .i-switch-inner {
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    left: 25px;
+    vertical-align: middle;
+}
+
+.switch-index .i-switch-inner .i-icon {
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.switch-index .i-switch:after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 22px;
+    background-color: #fff;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    cursor: pointer;
+    transition: left 0.2s ease-in-out, width 0.2s ease-in-out;
+}
+
+.switch-index .i-switch-checked:after {
+    left: 8px;
+}
+
+.switch-index .i-switch-large {
+    width: 60px;
+}
+
+.switch-index .i-switch-large.i-switch-checked:after {
+    left: 37px;
+}
+
+.switch-index .i-switch-checked:after {
+    left: 25px;
+}
+
+.switch-index .i-switch-checked {
+    border-color: #2d8cf0;
+    background-color: #2d8cf0;
+}
+
+.switch-index .i-switch-checked .i-switch-inner {
+    left: 8px;
+}
+
+.switch-index .i-switch-checked:after {
+    left: 25px;
+}
+
+.switch-index .i-switch-disabled {
+    background: #f3f3f3;
+    border-color: #f3f3f3;
+}
+
+.switch-index .i-switch-disabled:after {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.switch-index .i-switch-disabled .i-switch-inner {
+    color: #ccc;
+}

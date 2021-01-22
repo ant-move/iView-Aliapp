@@ -1,4 +1,0 @@
-{
-	"usingComponents": { "i-alert": "../../dist/alert/index" },
-	"defaultTitle": "Alert 警告提示"
-}

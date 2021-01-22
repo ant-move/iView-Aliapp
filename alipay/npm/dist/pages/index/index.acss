@@ -1,0 +1,8 @@
+.logo {
+    text-align: center;
+}
+
+.logo image {
+    display: block;
+    margin: 0 auto;
+}

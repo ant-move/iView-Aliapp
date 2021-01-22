@@ -1,0 +1,7 @@
+.steps-index {
+    display: block;
+    height: initial;
+}
+.steps-index .i-steps {
+    width: 100%;
+}

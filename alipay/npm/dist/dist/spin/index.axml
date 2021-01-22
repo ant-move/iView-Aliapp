@@ -1,0 +1,12 @@
+<view class='spin-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class="{{iClass}} i-spin i-spin-{{ size }} {{ fix ? 'i-spin-fix' : '' }} {{ custom ? 'i-spin-show-text' : '' }} {{ fullscreen ? 'i-spin-fullscreen' : '' }}">
+    <view class='i-spin-main'>
+      <view class='i-spin-dot'>
+      </view>
+      <view class='i-spin-text'>
+        <slot>
+        </slot>
+      </view>
+    </view>
+  </view>
+</view>

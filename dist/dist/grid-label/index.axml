@@ -1,6 +1,0 @@
-<view class='grid-label-index {{className}}' onChildRef='saveChildRef0'>
-  <view class='{{iClass}} i-grid-label'>
-    <slot>
-    </slot>
-  </view>
-</view>

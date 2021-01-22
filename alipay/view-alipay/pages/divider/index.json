@@ -1,4 +1,0 @@
-{
-	"usingComponents": { "i-divider": "../../dist/divider/index" },
-	"defaultTitle": "Divider 分隔符"
-}

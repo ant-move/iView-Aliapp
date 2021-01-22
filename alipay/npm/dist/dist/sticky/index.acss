@@ -1,0 +1,4 @@
+.sticky-index {
+    display: block;
+    height: initial;
+}

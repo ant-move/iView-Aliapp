@@ -1,0 +1,16 @@
+<view class='rate-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <import-sjs from="./index.axmlparse.sjs" name='parse'>
+  </import-sjs>
+  <view class='{{iClass}} i-rate' onTouchMove='antmoveAction' data-antmove-touchmove='handleTouchMove'>
+    <custom-input type='text' :name='name' a:value='{{value}}' class='i-rate-hide-input'>
+    </custom-input>
+    <view a:for='{{count}}' a:key='{{item}}' class='i-rate-star {{ parse.getCurrent( value,index ) }}' data-index='{{index}}' ref-numbers='{{count}}' onTap='antmoveAction' data-antmove-tap='handleClick'>
+      <i-icon type='collection_fill' size='{{size}}' ref='saveChildRef1'>
+      </i-icon>
+    </view>
+    <view class='i-rate-text' a:if='{{ value !== 0 }}'>
+      <slot>
+      </slot>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"i-message": "iview-aliapp/dist/dist/message/index",
+		"i-button": "iview-aliapp/dist/dist/button/index"
+	},
+	"defaultTitle": "Message 全局提醒"
+}

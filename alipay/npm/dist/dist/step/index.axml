@@ -1,0 +1,33 @@
+<view class='step-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <import-sjs from="./index.axmlparse.sjs" name='parse'>
+  </import-sjs>
+  <view class="{{iClass}} i-step-item {{parse.getClass(status,current,index)}} {{ direction === 'vertical' ? 'i-step-vertical' : 'i-step-horizontal' }}" style='{{parse.getItemStyle(len,direction)}}'>
+    <view class='i-step-item-ico'>
+      <view class='i-step-ico' a:if='{{parse.noIco(status,current,index,icon)  }}'>
+        {{ index+1 }}
+      </view>
+      <view class='i-step-ico' a:else >
+        <i-icon i-class='i-step-ico-in' type='{{parse.getIcoClass(status,icon)}}' ref='saveChildRef1'>
+        </i-icon>
+      </view>
+      <view class='i-step-line' a:if='{{ index !== len - 1 }}'>
+      </view>
+    </view>
+    <view class='i-step-item-main'>
+      <view class='i-step-item-title' a:if="{{title !== ''}}">
+        {{title}}
+      </view>
+      <view class='i-step-item-title' a:else >
+        <slot name='title'>
+        </slot>
+      </view>
+      <view class='i-step-item-content' a:if="{{content !== ''}}">
+        {{content}}
+      </view>
+      <view class='i-step-item-content' a:else >
+        <slot name='content'>
+        </slot>
+      </view>
+    </view>
+  </view>
+</view>

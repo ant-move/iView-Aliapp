@@ -1,0 +1,19 @@
+<view class="i-index-demo">
+    <i-index height="100%" bind:change="onChange">
+        <i-index-item 
+            wx:for="{{ cities }}" 
+            wx:for-index="_index" 
+            wx:key="{{_index}}" 
+            wx:for-item="_item" name="{{_item.key}}">
+            <view 
+                class="i-index-demo-item" 
+                wx:for="{{item.list}}" 
+            
+                wx:key="{{index}}" 
+                >
+                {{item.name}}
+            </view>
+        </i-index-item>
+        
+    </i-index>
+</view>

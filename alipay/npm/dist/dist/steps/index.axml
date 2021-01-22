@@ -1,0 +1,6 @@
+<view class='steps-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class='{{iClass}} i-steps'>
+    <slot>
+    </slot>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+<view class='toast-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class='i-toast-mask' a:if='{{ visible && mask }}' onTap='antmoveAction' data-antmove-tap='handleHide'>
+  </view>
+  <view class='{{iClass}} i-toast' a:if='{{ visible }}'>
+    <block a:if="{{ type !== 'default' }}">
+      <view class='i-toast-type'>
+        <i-icon i-class='i-toast-icon' type='success' a:if="{{ type === 'success' }}" ref='saveChildRef1'>
+        </i-icon>
+        <i-icon i-class='i-toast-icon' type='prompt' a:elif="{{ type === 'warning' }}" ref='saveChildRef2'>
+        </i-icon>
+        <i-icon i-class='i-toast-icon' type='delete' a:elif="{{ type === 'error' }}" ref='saveChildRef3'>
+        </i-icon>
+        <view class='i-toast-icon i-toast-loading' a:elif="{{ type === 'loading' }}">
+        </view>
+      </view>
+    </block>
+    <block a:else >
+      <i-icon i-class='i-toast-icon' type='{{ icon }}' a:if='{{ icon }}' ref='saveChildRef4'>
+      </i-icon>
+      <image class='i-toast-image' src='{{ image }}' a:if='{{ image }}' mode='aspectFit'>
+      </image>
+    </block>
+    <view class='i-toast-content' a:if='{{ content }}'>
+      {{ content }}
+    </view>
+  </view>
+</view>

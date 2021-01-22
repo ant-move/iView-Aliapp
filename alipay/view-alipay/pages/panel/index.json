@@ -1,4 +1,0 @@
-{
-	"usingComponents": { "i-panel": "../../dist/panel/index" },
-	"defaultTitle": "Panel 面板"
-}

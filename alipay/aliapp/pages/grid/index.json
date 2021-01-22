@@ -1,0 +1,11 @@
+{
+	"usingComponents": {
+		"i-grid": "iview-aliapp/dist/dist/grid/index",
+		"i-grid-item": "iview-aliapp/dist/dist/grid-item/index",
+		"i-grid-icon": "iview-aliapp/dist/dist/grid-icon/index",
+		"i-grid-label": "iview-aliapp/dist/dist/grid-label/index",
+		"i-icon": "iview-aliapp/dist/dist/icon/index",
+		"i-row": "iview-aliapp/dist/dist/row/index"
+	},
+	"defaultTitle": "Grid 宫格"
+}

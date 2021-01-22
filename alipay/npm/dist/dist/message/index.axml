@@ -1,0 +1,5 @@
+<view class='message-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class="{{iClass}} i-message i-message-{{type}} {{ visible ? 'i-message-show' : '' }}">
+    {{ content }}
+  </view>
+</view>

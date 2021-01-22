@@ -1,0 +1,43 @@
+.notice-bar-index {
+    display: block;
+    height: initial;
+}
+.notice-bar-index .i-noticebar {
+    display: flex;
+    height: 72rpx;
+    line-height: 72rpx;
+    font-size: 14px;
+    color: #f76a24;
+    background-color: #fefcec;
+    overflow: hidden;
+}
+
+.notice-bar-index .i-noticebar-icon {
+    display: flex;
+    margin-left: 30rpx;
+    align-items: center;
+}
+
+.notice-bar-index .i-noticebar-icon + view {
+    margin-left: 10rpx;
+}
+
+.notice-bar-index .i-noticebar-operation {
+    display: flex;
+    margin-right: 16rpx;
+    align-items: center;
+}
+
+.notice-bar-index .i-noticebar-content-wrap {
+    position: relative;
+    flex: 1;
+    margin: 0 30rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notice-bar-index .i-noticebar-content-wrap .i-noticebar-content {
+    position: absolute;
+    transition-duration: 20s;
+}

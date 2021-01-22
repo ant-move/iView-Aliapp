@@ -1,0 +1,4 @@
+.count-down-index {
+    display: block;
+    height: initial;
+}

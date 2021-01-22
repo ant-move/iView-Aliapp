@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+		"i-panel": "iview-aliapp/dist/dist/panel/index",
+		"i-row": "iview-aliapp/dist/dist/row/index",
+		"i-col": "iview-aliapp/dist/dist/col/index"
+	},
+	"defaultTitle": "Layout 栅格布局"
+}

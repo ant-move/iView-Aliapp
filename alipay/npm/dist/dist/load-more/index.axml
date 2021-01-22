@@ -1,0 +1,16 @@
+<view class='load-more-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class="{{iClass}} i-load-more {{ loading ? '' : 'i-load-more-line' }}">
+    <view class='i-load-more-loading' a:if='{{ loading }}'>
+    </view>
+    <view class='i-load-more-tip'>
+      <view a:if="{{ tip !== '' }}">
+        {{ tip }}
+      </view>
+      <view a:elif="{{ tip === '' && loading }}">
+        正在加载
+      </view>
+      <view class='i-load-more-empty' a:else >
+      </view>
+    </view>
+  </view>
+</view>

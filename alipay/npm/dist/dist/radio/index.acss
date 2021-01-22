@@ -1,0 +1,24 @@
+.radio-index {
+    display: block;
+    height: initial;
+}
+.radio-index .i-radio-cell::after {
+    display: block;
+}
+
+.radio-index .i-radio-radio-left {
+    float: left;
+}
+
+.radio-index .i-radio-radio-right {
+    float: right;
+}
+
+.radio-index .i-radio-radio {
+    vertical-align: middle;
+}
+
+.radio-index .i-radio-title {
+    display: inline-block;
+    vertical-align: middle;
+}

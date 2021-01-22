@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"i-progress": "iview-aliapp/dist/dist/progress/index",
+		"i-button": "iview-aliapp/dist/dist/button/index"
+	},
+	"defaultTitle": "Progress 进度条"
+}

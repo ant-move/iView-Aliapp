@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"i-sticky": "iview-aliapp/dist/dist/sticky/index",
+		"i-sticky-item": "iview-aliapp/dist/dist/sticky-item/index"
+	},
+	"defaultTitle": "Sticky 吸顶容器"
+}

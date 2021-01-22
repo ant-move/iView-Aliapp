@@ -1,0 +1,11 @@
+<view class='badge-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class='{{iClass}} i-badge'>
+    <slot>
+    </slot>
+    <view class='i-badge-dot' a:if='{{ dot }}'>
+    </view>
+    <view class='i-badge-count {{iClassAlone}}' a:elif='{{ count !== 0 }}'>
+      {{ finalCount }}
+    </view>
+  </view>
+</view>

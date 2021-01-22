@@ -1,0 +1,4 @@
+{
+	"usingComponents": { "i-badge": "iview-aliapp/dist/dist/badge/index" },
+	"defaultTitle": "Badge 徽章"
+}

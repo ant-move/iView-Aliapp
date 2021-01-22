@@ -1,0 +1,9 @@
+.row-index {
+    display: block;
+    height: initial;
+}
+.row-index .i-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

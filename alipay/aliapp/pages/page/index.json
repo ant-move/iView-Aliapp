@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+		"i-page": "iview-aliapp/dist/dist/page/index",
+		"i-icon": "iview-aliapp/dist/dist/icon/index",
+		"i-panel": "iview-aliapp/dist/dist/panel/index"
+	},
+	"defaultTitle": "Page 分页"
+}

@@ -1,0 +1,76 @@
+<view class='modal-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class="i-modal-mask {{iClassMask}} {{ visible ? 'i-modal-mask-show' : '' }}">
+  </view>
+  <view class="{{iClass}} i-modal {{ visible ? 'i-modal-show' : '' }}">
+    <view class='i-modal-main'>
+      <view class='i-modal-content'>
+        <view class='i-modal-title' a:if='{{ title }}'>
+          {{ title }}
+        </view>
+        <view class='i-modal-body'>
+          <slot>
+          </slot>
+        </view>
+        <view class='i-modal-actions' a:if='{{ actions.length }}'>
+          <block a:if="{{ actionMode === 'horizontal' }}">
+            <i-grid i-class='i-modal-grid' ref='saveChildRef1'>
+              <i-grid-item i-class="{{ actions.length === (index + 1) ? 'i-modal-grid-item-last' : 'i-modal-grid-item' }}" a:for='{{ actions }}' a:key='{{*this}}' ref-numbers='{{ actions }}' ref='saveChildRef2'>
+                <block a:for='{{ [{ item, index  }] }}' a:for-item='amitem' _is='button' ref-numbers='{{ [{ item, index  }] }}'>
+                  <i-button long=' ' type='ghost' data-index='{{ amitem.index }}' onClick='handleClickItem' ref='saveChildRef5'>
+                    <view class='i-modal-btn-loading' a:if='{{ amitem.item.loading }}'>
+                    </view>
+                    <i-icon a:if='{{ amitem.item.icon }}' type='{{ amitem.item.icon }}' i-class='i-modal-btn-icon' ref='saveChildRef6'>
+                    </i-icon>
+                    <view class='i-modal-btn-text' style="{{ amitem.item.color ? 'color: ' + amitem.item.color : '' }}">
+                      {{ amitem.item.name }}
+                    </view>
+                  </i-button>
+                </block>
+              </i-grid-item>
+            </i-grid>
+          </block>
+          <block a:else >
+            <view class='i-modal-action-vertical' a:for='{{ actions }}' a:key='{{ item.name }}' ref-numbers='{{ actions }}'>
+              <block a:for='{{ [{ item, index  }] }}' a:for-item='amitem' _is='button' ref-numbers='{{ [{ item, index  }] }}'>
+                <i-button long=' ' type='ghost' data-index='{{ amitem.index }}' onClick='handleClickItem' ref='saveChildRef9'>
+                  <view class='i-modal-btn-loading' a:if='{{ amitem.item.loading }}'>
+                  </view>
+                  <i-icon a:if='{{ amitem.item.icon }}' type='{{ amitem.item.icon }}' i-class='i-modal-btn-icon' ref='saveChildRef10'>
+                  </i-icon>
+                  <view class='i-modal-btn-text' style="{{ amitem.item.color ? 'color: ' + amitem.item.color : '' }}">
+                    {{ amitem.item.name }}
+                  </view>
+                </i-button>
+              </block>
+            </view>
+          </block>
+        </view>
+        <view class='i-modal-actions' a:else >
+          <i-grid i-class='i-modal-grid' a:if='{{ showOk || showCancel }}' ref='saveChildRef11'>
+            <i-grid-item i-class='i-modal-grid-item' a:if='{{ showCancel }}' ref='saveChildRef12'>
+              <i-button i-class='i-modal-btn-cancel' long=" " type='ghost' onClick='handleClickCancel' ref='saveChildRef13'>
+                {{ cancelText }}
+              </i-button>
+            </i-grid-item>
+            <i-grid-item i-class='i-modal-grid-item-last' a:if='{{ showOk }}' ref='saveChildRef14'>
+              <i-button i-class='i-modal-btn-ok' long=" " type='ghost' onClick='handleClickOk' ref='saveChildRef15'>
+                {{ okText }}
+              </i-button>
+            </i-grid-item>
+          </i-grid>
+        </view>
+      </view>
+    </view>
+  </view>
+  <template name='button'>
+    <i-button long=" " type='ghost' data-index='{{ index }}' onClick='handleClickItem' ref='saveChildRef16'>
+      <view class='i-modal-btn-loading' a:if='{{ item.loading }}'>
+      </view>
+      <i-icon a:if='{{ item.icon }}' type='{{ item.icon }}' i-class='i-modal-btn-icon' ref='saveChildRef17'>
+      </i-icon>
+      <view class='i-modal-btn-text' style="{{ item.color ? 'color: ' + item.color : '' }}">
+        {{ item.name }}
+      </view>
+    </i-button>
+  </template>
+</view>

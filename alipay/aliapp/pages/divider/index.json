@@ -1,0 +1,4 @@
+{
+	"usingComponents": { "i-divider": "iview-aliapp/dist/dist/divider/index" },
+	"defaultTitle": "Divider 分隔符"
+}

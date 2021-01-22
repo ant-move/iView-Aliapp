@@ -1,0 +1,12 @@
+<view class='input-number-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <view class='{{iClass}} i-input-number i-input-number-size-{{ size }}'>
+    <view class="i-input-number-minus {{ value <= min ? 'i-input-number-disabled' : '' }}" data-disabled='{{ value <= min }}' onTap='antmoveAction' data-antmove-tap='handleMinus'>
+      -
+    </view>
+    <input no-custom=" " class="i-input-number-text {{ min >= max ? 'i-input-number-disabled' : '' }}" type='number' value='{{ value }}' disabled='{{ min >= max }}' onBlur='handleBlur'>
+    </input>
+    <view class="i-input-number-plus {{ value >= max ? 'i-input-number-disabled' : '' }}" data-disabled='{{ value >= max }}' onTap='antmoveAction' data-antmove-tap='handlePlus'>
+      +
+    </view>
+  </view>
+</view>

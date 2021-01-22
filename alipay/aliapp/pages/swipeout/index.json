@@ -1,0 +1,11 @@
+{
+	"usingComponents": {
+		"i-swipeout": "iview-aliapp/dist/dist/swipeout/index",
+		"i-cell-group": "iview-aliapp/dist/dist/cell-group/index",
+		"i-cell": "iview-aliapp/dist/dist/cell/index",
+		"i-card": "iview-aliapp/dist/dist/card/index",
+		"i-icon": "iview-aliapp/dist/dist/icon/index",
+		"i-action-sheet": "iview-aliapp/dist/dist/action-sheet/index"
+	},
+	"defaultTitle": "Swipeout 滑动菜单"
+}
