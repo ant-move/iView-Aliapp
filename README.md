@@ -37,7 +37,7 @@
 
 * 支付宝小程序
 
-<img width='150px' src='https://img.alicdn.com/imgextra/i3/O1CN01uwbP3S29HkDMc7c4N_!!6000000008043-2-tps-302-300.png'/>
+<img width='150px' src='https://cache.amap.com/ecology/tool/amap-backend-server/platform/img/16268702913618534.png'/>
 
 * gif 效果图
 
